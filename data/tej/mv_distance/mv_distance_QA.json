@@ -1,0 +1,28 @@
+{
+ "source": "D:\\Clude Code GIS\\Energy\\Energy map\\GridFinder_Thailand\\gridfinder_mv_lines_thailand.gpkg",
+ "source_sha256": "58ddd588c50c3c3e22b7962a3fcc96cf656e961202ed794ec58ff1a2516f0a27",
+ "n_features": 36027,
+ "gadm": "D:\\Clude Code GIS\\Energy\\DER\\Data\\01_Admin_Boundaries\\gadm41_THA.gpkg",
+ "gadm_layer": "ADM_ADM_1",
+ "crs": "EPSG:32647",
+ "res_m": 90.0,
+ "grid_w_h": [
+  9868,
+  18243
+ ],
+ "valid_cells": 63536390,
+ "pct_within_1km": 33.9,
+ "pct_within_5km": 84.1,
+ "pct_within_10km": 94.1,
+ "max_km": 66.2,
+ "province_mean_km_range": [
+  0.68,
+  9.49
+ ],
+ "min_cells_per_province": 50081,
+ "spearman_vs_C4_line_distance": 0.689,
+ "utm47_scale_factor_at_east_edge": {
+  "lon": 105.57,
+  "k": 1.0059
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "B": 4999,
+ "seed": 42,
+ "weights_baseline": {
+  "C1_Resource": 0.1464,
+  "C2_Equity": 0.341,
+  "C3_Demand": 0.1676,
+  "C4_Infra": 0.1767,
+  "C5_Physical": 0.1683
+ },
+ "weight_ci": {
+  "C1_Resource": [
+   0.095,
+   0.207
+  ],
+  "C2_Equity": [
+   0.262,
+   0.411
+  ],
+  "C3_Demand": [
+   0.126,
+   0.209
+  ],
+  "C4_Infra": [
+   0.141,
+   0.246
+  ],
+  "C5_Physical": [
+   0.121,
+   0.22
+  ]
+ },
+ "zone1_top6": [
+  "Ang Thong",
+  "Chai Nat",
+  "Kalasin",
+  "Nong Bua Lam Phu",
+  "Pattani",
+  "Si Sa Ket"
+ ],
+ "stability_by_k": {
+  "2": {
+   "top_cluster_size": 43,
+   "baseline_zone1_inside": 6
+  },
+  "3": {
+   "top_cluster_size": 10,
+   "baseline_zone1_inside": 6
+  },
+  "4": {
+   "top_cluster_size": 6,
+   "baseline_zone1_inside": 6
+  },
+  "5": {
+   "top_cluster_size": 6,
+   "baseline_zone1_inside": 6
+  }
+ },
+ "note": "conditional uncertainty: resamples 77 province observations only, does not propagate raster/source-data error"
+}

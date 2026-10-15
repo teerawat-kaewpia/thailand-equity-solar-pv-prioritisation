@@ -1,0 +1,58 @@
+{
+  "n_plants": 332,
+  "zone_table": [
+    {
+      "zone": 1,
+      "n_provinces": 6,
+      "land_pct": 4.9,
+      "solar_obs": 6,
+      "solar_obs_pct": 1.8,
+      "expected": 16.4,
+      "enrichment": 0.367
+    },
+    {
+      "zone": 2,
+      "n_provinces": 23,
+      "land_pct": 28.2,
+      "solar_obs": 122,
+      "solar_obs_pct": 36.7,
+      "expected": 93.6,
+      "enrichment": 1.303
+    },
+    {
+      "zone": 3,
+      "n_provinces": 19,
+      "land_pct": 22.5,
+      "solar_obs": 98,
+      "solar_obs_pct": 29.5,
+      "expected": 74.7,
+      "enrichment": 1.312
+    },
+    {
+      "zone": 4,
+      "n_provinces": 17,
+      "land_pct": 21.8,
+      "solar_obs": 67,
+      "solar_obs_pct": 20.2,
+      "expected": 72.4,
+      "enrichment": 0.926
+    },
+    {
+      "zone": 5,
+      "n_provinces": 12,
+      "land_pct": 22.6,
+      "solar_obs": 39,
+      "solar_obs_pct": 11.7,
+      "expected": 75.0,
+      "enrichment": 0.52
+    }
+  ],
+  "chi2": 40.2,
+  "df": 4,
+  "p": 4.01e-08,
+  "zone1_hit_rate": 0.018,
+  "zone1_land_share": 0.049,
+  "zone1_enrichment": 0.367,
+  "zone12_hit_rate": 0.386,
+  "zone12_land_share": 0.331
+}

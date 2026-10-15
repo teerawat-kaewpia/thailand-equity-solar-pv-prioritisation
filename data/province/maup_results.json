@@ -1,0 +1,57 @@
+{
+  "province": {
+    "n": 77,
+    "weights": {
+      "C1_Resource": 0.1464,
+      "C2_Equity": 0.341,
+      "C3_Demand": 0.1677,
+      "C4_Infra": 0.1767,
+      "C5_Physical": 0.1683
+    },
+    "dominant_criterion": "C2_Equity",
+    "equity_vs_efficiency_rho": -0.394,
+    "equity_vs_efficiency_p": 0.0003953,
+    "top_unit": "Pattani",
+    "note": "baseline \u2014 paper unit"
+  },
+  "region": {
+    "n": 6,
+    "weights": {
+      "C1_Resource": 0.1575,
+      "C2_Equity": 0.2308,
+      "C3_Demand": 0.2288,
+      "C4_Infra": 0.173,
+      "C5_Physical": 0.2099
+    },
+    "dominant_criterion": "C2_Equity",
+    "equity_vs_efficiency_rho": -0.943,
+    "equity_vs_efficiency_p": 0.004805,
+    "top_unit": "Northeast",
+    "note": "NESDB 6-region grouping (conventional); n=6 -> weights fragile"
+  },
+  "amphoe": {
+    "n": 928,
+    "weights": {
+      "C1_Resource": 0.118,
+      "C2_Equity": 0.3277,
+      "C3_Demand": 0.1124,
+      "C4_Infra": 0.3182,
+      "C5_Physical": 0.1236
+    },
+    "dominant_criterion": "C2_Equity",
+    "equity_vs_efficiency_rho": -0.315,
+    "equity_vs_efficiency_p": 8.413e-23,
+    "top_unit": "Muang Pattani",
+    "note": "GADM ADM-2; 928/928 amphoe with full data"
+  },
+  "province_vs_amphoe_mean": {
+    "spearman": 0.905,
+    "p": 1.623e-29,
+    "n": 77
+  },
+  "equity_weight_rank_by_scale": {
+    "region": 1,
+    "province": 1,
+    "amphoe": 1
+  }
+}

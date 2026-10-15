@@ -1,0 +1,372 @@
+{
+ "entries": [
+  "Pepermans G, Driesen J, Haeseldonckx D, Belmans R, D’haeseleer W. Distributed generation: definition, benefits and issues. Energy Policy. 2005;33(6):787–798. https://doi.org/10.1016/j.enpol.2003.10.004",
+  "Sovacool BK, Heffron RJ, McCauley D, Goldthau A. Energy decisions reframed as justice and ethical concerns. Nat Energy. 2016;1(5):16024. https://doi.org/10.1038/nenergy.2016.24",
+  "Jenkins K, McCauley D, Heffron R, Stephan H, Rehner R. Energy justice: A conceptual review. Energy Research & Social Science. 2016;11:174–182. https://doi.org/10.1016/j.erss.2015.10.004",
+  "Heffron RJ, McCauley D. The concept of energy justice across the disciplines. Energy Policy. 2017;105:658–667. https://doi.org/10.1016/j.enpol.2017.03.018",
+  "Robinson C, Mattioli G. Double energy vulnerability: Spatial intersections of domestic and transport energy poverty in England. Energy Research & Social Science. 2020;70:101699. https://doi.org/10.1016/j.erss.2020.101699",
+  "Riva M, Grubbs E, Breau S. The geography of energy poverty in Canada: Spatial clustering and inequalities at the municipal level. Energy Policy. 2024;195:114298. https://doi.org/10.1016/j.enpol.2024.114298",
+  "Sunter DA, Castellanos S, Kammen DM. Disparities in rooftop photovoltaics deployment in the United States by race and ethnicity. Nat Sustain. 2019;2(1):71–76. https://doi.org/10.1038/s41893-018-0204-z",
+  "O’Shaughnessy E, Barbose G, Wiser R, Forrester S, Darghouth N. The impact of policies and business models on income equity in rooftop solar adoption. Nat Energy. 2020;6(1):84–91. https://doi.org/10.1038/s41560-020-00724-2",
+  "Darghouth NR, O’Shaughnessy E, Forrester S, Barbose G. Characterizing local rooftop solar adoption inequity in the US. Environ. Res. Lett. 2022;17(3):034028. https://doi.org/10.1088/1748-9326/ac4fdc",
+  "Konzen G, Best R, de Castro NJ. The energy injustice of household solar energy: A systematic review of distributional disparities in residential rooftop solar adoption. Energy Research & Social Science. 2024;111:103473. https://doi.org/10.1016/j.erss.2024.103473",
+  "Ahlborg H, Hammar L. Drivers and barriers to rural electrification in Tanzania and Mozambique – Grid-extension, off-grid, and renewable energy technologies. Renewable Energy. 2014;61:117–124. https://doi.org/10.1016/j.renene.2012.09.057",
+  "Bhattacharyya SC, Palit D. Mini-grid based off-grid electrification to enhance electricity access in developing countries: What policies may be required? Energy Policy. 2016;94:166–178. https://doi.org/10.1016/j.enpol.2016.04.010",
+  "Bhattacharyya SC. Energy access programmes and sustainable development: A critical review and analysis. Energy for Sustainable Development. 2012;16(3):260–271. https://doi.org/10.1016/j.esd.2012.05.002",
+  "Behzadian M, Khanmohammadi Otaghsara S, Yazdani M, Ignatius J. A state-of the-art survey of TOPSIS applications. Expert Systems with Applications. 2012;39(17):13051–13069. https://doi.org/10.1016/j.eswa.2012.05.056",
+  "Chen P. Effects of the entropy weight on TOPSIS. Expert Systems with Applications. 2021;168:114186. https://doi.org/10.1016/j.eswa.2020.114186",
+  "Shao M, Han Z, Sun J, Xiao C, Zhang S, Zhao Y. A review of multi-criteria decision making applications for renewable energy site selection. Renewable Energy. 2020;157:377–403. https://doi.org/10.1016/j.renene.2020.04.137",
+  "Atici KB, Simsek AB, Ulucan A, Tosun MU. A GIS-based Multiple Criteria Decision Analysis approach for wind power plant site selection. Utilities Policy. 2015;37:86–96. https://doi.org/10.1016/j.jup.2015.06.001",
+  "Khan A, Ali Y, Pamucar D. Solar PV power plant site selection using a GIS-based non-linear multi-criteria optimization technique. Environ Sci Pollut Res. 2023;30(20):57378–57397. https://doi.org/10.1007/s11356-023-26540-1",
+  "Şahin G, Koç A, van Sark W. Multi-criteria decision making for solar power - Wind power plant site selection using a GIS-intuitionistic fuzzy-based approach with an application in the Netherlands. Energy Strategy Reviews. 2024;51:101307. https://doi.org/10.1016/j.esr.2024.101307",
+  "Charabi Y, Gastli A. PV site suitability analysis using GIS-based spatial fuzzy multi-criteria evaluation. Renewable Energy. 2011;36(9):2554–2561. https://doi.org/10.1016/j.renene.2010.10.037",
+  "Dupraz C, Marrou H, Talbot G, Dufour L, Nogier A, Ferard Y. Combining solar photovoltaic panels and food crops for optimising land use: Towards new agrivoltaic schemes. Renewable Energy. 2011;36(10):2725–2732. https://doi.org/10.1016/j.renene.2011.03.005",
+  "Majumdar D, Pasqualetti MJ. Dual use of agricultural land: Introducing ‘agrivoltaics’ in Phoenix Metropolitan Statistical Area, USA. Landscape and Urban Planning. 2018;170:150–168. https://doi.org/10.1016/j.landurbplan.2017.10.011",
+  "Noorollahi E, Fadai D, Akbarpour Shirazi M, Ghodsipour S. Land Suitability Analysis for Solar Farms Exploitation Using GIS and Fuzzy Analytic Hierarchy Process (FAHP)—A Case Study of Iran. Energies. 2016;9(8):643. https://doi.org/10.3390/en9080643",
+  "Ali S, Taweekun J, Techato K, Waewsak J, Gyawali S. GIS based site suitability assessment for wind and solar farms in Songkhla, Thailand. Renewable Energy. 2019;132:1360–1372. https://doi.org/10.1016/j.renene.2018.09.035",
+  "Anselin L. Local Indicators of Spatial Association—LISA. Geographical Analysis. 1995;27(2):93–115. https://doi.org/10.1111/j.1538-4632.1995.tb00338.x",
+  "Briz-Redón Á. A Bayesian shared-effects modeling framework to quantify the modifiable areal unit problem. Spatial Statistics. 2022;51:100689. https://doi.org/10.1016/j.spasta.2022.100689",
+  "Solat S, Aminifar F, Shayanfar H. Distributed generation hosting capacity in electric distribution network in the presence of correlated uncertainties. IET Generation Trans & Dist. 2020;15(5):836–848. https://doi.org/10.1049/gtd2.12062",
+  "Čađenović R, Jakus D. Maximization of Distribution Network Hosting Capacity through Optimal Grid Reconfiguration and Distributed Generation Capacity Allocation/Control. Energies. 2020;13(20):5315. https://doi.org/10.3390/en13205315",
+  "Arderne C, Zorn C, Nicolas C, Koks EE. Predictive mapping of the global power system using open data. Sci Data. 2020;7(1):19. https://doi.org/10.1038/s41597-019-0347-4",
+  "Hansen MC, Potapov PV, Moore R, Hancher M, Turubanova SA, Tyukavina A, et al. High-Resolution Global Maps of 21st-Century Forest Cover Change. Science. 2013;342(6160):850–853. https://doi.org/10.1126/science.1244693",
+  "Haklay M, Weber P. OpenStreetMap: User-Generated Street Maps. IEEE Pervasive Comput. 2008;7(4):12–18. https://doi.org/10.1109/mprv.2008.80",
+  "Thomson DR, Leasure DR, Bird T, Tzavidis N, Tatem AJ. How accurate are WorldPop-Global-Unconstrained gridded population data at the cell-level?: A simulation analysis in urban Namibia. PLoS ONE. 2022;17(7):e0271504. https://doi.org/10.1371/journal.pone.0271504",
+  "Gibson J, Boe-Gibson G. Nighttime Lights and County-Level Economic Activity in the United States: 2001 to 2019. Remote Sensing. 2021;13(14):2741. https://doi.org/10.3390/rs13142741",
+  "Chaianong A, Pharino C. Outlook and challenges for promoting solar photovoltaic rooftops in Thailand. Renewable and Sustainable Energy Reviews. 2015;48:356–372. https://doi.org/10.1016/j.rser.2015.04.042",
+  "Shannon CE. A Mathematical Theory of Communication. Bell System Technical Journal. 1948;27(3):379–423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x",
+  "UNFCCC. Paris Agreement to the United Nations Framework Convention on Climate Change. New York: United Nations; 2015. https://unfccc.int/process-and-meetings/the-paris-agreement",
+  "International Energy Agency. Southeast Asia Energy Outlook 2022. Paris: IEA; 2022. https://www.iea.org/reports/southeast-asia-energy-outlook-2022. https://doi.org/10.1787/10bc5730-en",
+  "Ministry of Energy, Thailand. Alternative Energy Development Plan 2018–2037 (AEDP 2018). Bangkok: Ministry of Energy; 2019.",
+  "Energy Policy and Planning Office (EPPO), Ministry of Energy, Thailand. Power Development Plan 2018–2037, Revision 1 (PDP2018 Rev.1). Bangkok: EPPO; 2020. [in Thai]",
+  "Energy Policy and Planning Office (EPPO). Draft Power Development Plan (PDP2024–2037 revision) and Gas Plan: public consultation documents. Bangkok: Ministry of Energy; 2024. Public consultation conducted in June 2024. https://www.eppo.go.th/information-services/advertise/news-eppo/%E0%B8%A3%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9C%E0%B8%99-pdp-2024-%E0%B9%81%E0%B8%A5%E0%B8%B0-%E0%B9%81%E0%B8%9C%E0%B8%99-gas-plan-2024/",
+  "Energy Policy and Planning Office (EPPO). Thailand Energy Statistics 2022. Bangkok: Ministry of Energy; 2022. https://www.eppo.go.th/index.php/en/",
+  "Department of Alternative Energy Development and Efficiency (DEDE). Thailand Renewable Energy Statistics 2022. Bangkok: Ministry of Energy; 2023.",
+  "World Bank. Tracking SDG7: The Energy Progress Report 2023. Washington, DC: World Bank; 2023. https://trackingsdg7.esmap.org/",
+  "Saaty TL. The Analytic Hierarchy Process: Planning, Priority Setting, Resource Allocation. New York: McGraw-Hill; 1980.",
+  "Hwang CL, Yoon K. Multiple Attribute Decision Making: Methods and Applications. Berlin: Springer-Verlag; 1981.",
+  "Solargis. Global Solar Atlas v2: photovoltaic power output (PVOUT) long-term yearly average. Bratislava: Solargis / World Bank Group; 2020. https://globalsolaratlas.info/",
+  "Lo W. Thailand's new PDP sets 60% clean power goal as firms seek fairer access to renewables. RECCESSARY; 29 June 2026. Reports that the PDP2024 draft was not adopted and that a further revision (a 2026–2050 plan) remained under inter-agency deliberation, with a public hearing expected in August 2026. https://www.reccessary.com/en/news/thailand-pdp-2026",
+  "Energy Regulatory Commission (ERC), Thailand. Regulation of the Energy Regulatory Commission on Power Purchase from Solar PV Rooftop, B.E. 2556 (2013). Issued under the Energy Industry Act B.E. 2550 (2007); announced 30 August 2013 and published in the Government Gazette on 6 September 2013. Bangkok: ERC. http://www.ratchakitcha.soc.go.th/DATA/PDF/2556/E/111/1.PDF",
+  "Energy Regulatory Commission (ERC), Thailand. Announcement of the Energy Regulatory Commission on the invitation to purchase electricity from rooftop solar projects for the public sector, residential type, B.E. 2569 (2026). Signed 26 June 2026 under the Energy Industry Act B.E. 2550, s.11(1),(4). Bangkok: ERC; 2026. [in Thai]",
+  "Energy Regulatory Commission (ERC), Thailand. Regulation of the Energy Regulatory Commission on electricity procurement from the Community-based Solar Power Generation Project B.E. 2569 (2026). Royal Gazette, vol. 143, special section 230 Ng, 22 September 2026. Bangkok: ERC; 2026. [in Thai]",
+  "Provincial Electricity Authority (PEA), Thailand. Announcement on grid-connection requirements for generators under the public-sector rooftop solar programme B.E. 2569 (2026). Signed 26 June 2026. Bangkok: PEA; 2026. [in Thai]",
+  "Energy Conservation Promotion Act B.E. 2535 (1992), as amended by the Energy Conservation Promotion Act (No. 2) B.E. 2550 (2007), ss.24, 25 and 27. Bangkok: Royal Thai Government; 1992, 2007. [in Thai]",
+  "Energy Regulatory Commission (ERC), Thailand. Public information document on the automatic tariff adjustment (Ft) for September to December 2026. Bangkok: ERC; 2026. [in Thai]",
+  "Metropolitan Electricity Authority (MEA), Thailand. Authority [web page]. https://www.mea.or.th/about-mea/background/authority (accessed 8 October 2026). [in Thai]",
+  "Office of the National Economic and Social Development Council (NESDC), Thailand. Poverty and income distribution statistics, edition 2567 (2024), Table 1.5: poverty incidence by province, based on the National Statistical Office Household Socio-Economic Survey. Bangkok: NESDC. [in Thai]",
+  "WorldPop. Global 100m Population total adjusted to match the corresponding UNPD estimate. University of Southampton; 2020. https://doi.org/10.5258/SOTON/WP00660",
+  "OpenStreetMap contributors. OpenStreetMap data for Thailand, power=line, power=cable and power=plant features retrieved through the Overpass API (database state 22 June 2026). https://www.openstreetmap.org",
+  "European Space Agency. Copernicus Global Digital Elevation Model (COP-DEM GLO-30), produced by DLR e.V. and Airbus Defence and Space GmbH. https://doi.org/10.5270/ESA-c5d3d65",
+  "Pesaresi M. GHS-BUILT-H R2023A: GHS building height, derived from AW3D30, SRTM30, and Sentinel2 composite (2018). European Commission, Joint Research Centre (JRC); 2023. https://doi.org/10.2905/85005901-3A49-48DD-9D19-6261354F56FE",
+  "GADM. Database of Global Administrative Areas, version 4.1. https://gadm.org (accessed 15 June 2026).",
+  "Provincial Electricity Authority (PEA), Thailand. Business and services of PEA [web page]. https://www.pea.co.th/about-pea/pea-service (accessed 9 October 2026). [in Thai]"
+ ],
+ "provenance": [
+  {
+   "doi": "10.1016/j.enpol.2003.10.004",
+   "verified": "crossref",
+   "title": "Distributed generation: definition, benefits and issues"
+  },
+  {
+   "doi": "10.1038/nenergy.2016.24",
+   "verified": "crossref",
+   "title": "Energy decisions reframed as justice and ethical concerns"
+  },
+  {
+   "doi": "10.1016/j.erss.2015.10.004",
+   "verified": "crossref",
+   "title": "Energy justice: A conceptual review"
+  },
+  {
+   "doi": "10.1016/j.enpol.2017.03.018",
+   "verified": "crossref",
+   "title": "The concept of energy justice across the disciplines"
+  },
+  {
+   "doi": "10.1016/j.erss.2020.101699",
+   "verified": "crossref",
+   "title": "Double energy vulnerability: Spatial intersections of domestic and transport energy poverty in England"
+  },
+  {
+   "doi": "10.1016/j.enpol.2024.114298",
+   "verified": "crossref",
+   "title": "The geography of energy poverty in Canada: Spatial clustering and inequalities at the municipal level"
+  },
+  {
+   "doi": "10.1038/s41893-018-0204-z",
+   "verified": "crossref",
+   "title": "Disparities in rooftop photovoltaics deployment in the United States by race and ethnicity"
+  },
+  {
+   "doi": "10.1038/s41560-020-00724-2",
+   "verified": "crossref",
+   "title": "The impact of policies and business models on income equity in rooftop solar adoption"
+  },
+  {
+   "doi": "10.1088/1748-9326/ac4fdc",
+   "verified": "crossref",
+   "title": "Characterizing local rooftop solar adoption inequity in the US"
+  },
+  {
+   "doi": "10.1016/j.erss.2024.103473",
+   "verified": "crossref",
+   "title": "The energy injustice of household solar energy: A systematic review of distributional disparities in residential rooftop solar adoption"
+  },
+  {
+   "doi": "10.1016/j.renene.2012.09.057",
+   "verified": "crossref",
+   "title": "Drivers and barriers to rural electrification in Tanzania and Mozambique – Grid-extension, off-grid, and renewable energy technologies"
+  },
+  {
+   "doi": "10.1016/j.enpol.2016.04.010",
+   "verified": "crossref",
+   "title": "Mini-grid based off-grid electrification to enhance electricity access in developing countries: What policies may be required?"
+  },
+  {
+   "doi": "10.1016/j.esd.2012.05.002",
+   "verified": "crossref",
+   "title": "Energy access programmes and sustainable development: A critical review and analysis"
+  },
+  {
+   "doi": "10.1016/j.eswa.2012.05.056",
+   "verified": "crossref",
+   "title": "A state-of the-art survey of TOPSIS applications"
+  },
+  {
+   "doi": "10.1016/j.eswa.2020.114186",
+   "verified": "crossref",
+   "title": "Effects of the entropy weight on TOPSIS"
+  },
+  {
+   "doi": "10.1016/j.renene.2020.04.137",
+   "verified": "crossref",
+   "title": "A review of multi-criteria decision making applications for renewable energy site selection"
+  },
+  {
+   "doi": "10.1016/j.jup.2015.06.001",
+   "verified": "crossref",
+   "title": "A GIS-based Multiple Criteria Decision Analysis approach for wind power plant site selection"
+  },
+  {
+   "doi": "10.1007/s11356-023-26540-1",
+   "verified": "crossref",
+   "title": "Solar PV power plant site selection using a GIS-based non-linear multi-criteria optimization technique"
+  },
+  {
+   "doi": "10.1016/j.esr.2024.101307",
+   "verified": "crossref",
+   "title": "Multi-criteria decision making for solar power - Wind power plant site selection using a GIS-intuitionistic fuzzy-based approach with an application in the Netherlands"
+  },
+  {
+   "doi": "10.1016/j.renene.2010.10.037",
+   "verified": "crossref",
+   "title": "PV site suitability analysis using GIS-based spatial fuzzy multi-criteria evaluation"
+  },
+  {
+   "doi": "10.1016/j.renene.2011.03.005",
+   "verified": "crossref",
+   "title": "Combining solar photovoltaic panels and food crops for optimising land use: Towards new agrivoltaic schemes"
+  },
+  {
+   "doi": "10.1016/j.landurbplan.2017.10.011",
+   "verified": "crossref",
+   "title": "Dual use of agricultural land: Introducing ‘agrivoltaics’ in Phoenix Metropolitan Statistical Area, USA"
+  },
+  {
+   "doi": "10.3390/en9080643",
+   "verified": "crossref",
+   "title": "Land Suitability Analysis for Solar Farms Exploitation Using GIS and Fuzzy Analytic Hierarchy Process (FAHP)—A Case Study of Iran"
+  },
+  {
+   "doi": "10.1016/j.renene.2018.09.035",
+   "verified": "crossref",
+   "title": "GIS based site suitability assessment for wind and solar farms in Songkhla, Thailand"
+  },
+  {
+   "doi": "10.1111/j.1538-4632.1995.tb00338.x",
+   "verified": "crossref",
+   "title": "Local Indicators of Spatial Association—LISA"
+  },
+  {
+   "doi": "10.1016/j.spasta.2022.100689",
+   "verified": "crossref",
+   "title": "A Bayesian shared-effects modeling framework to quantify the modifiable areal unit problem"
+  },
+  {
+   "doi": "10.1049/gtd2.12062",
+   "verified": "crossref",
+   "title": "Distributed generation hosting capacity in electric distribution network in the presence of correlated uncertainties"
+  },
+  {
+   "doi": "10.3390/en13205315",
+   "verified": "crossref",
+   "title": "Maximization of Distribution Network Hosting Capacity through Optimal Grid Reconfiguration and Distributed Generation Capacity Allocation/Control"
+  },
+  {
+   "doi": "10.1038/s41597-019-0347-4",
+   "verified": "crossref",
+   "title": "Predictive mapping of the global power system using open data"
+  },
+  {
+   "doi": "10.1126/science.1244693",
+   "verified": "crossref",
+   "title": "High-Resolution Global Maps of 21st-Century Forest Cover Change"
+  },
+  {
+   "doi": "10.1109/mprv.2008.80",
+   "verified": "crossref",
+   "title": "OpenStreetMap: User-Generated Street Maps"
+  },
+  {
+   "doi": "10.1371/journal.pone.0271504",
+   "verified": "crossref",
+   "title": "How accurate are WorldPop-Global-Unconstrained gridded population data at the cell-level?: A simulation analysis in urban Namibia"
+  },
+  {
+   "doi": "10.3390/rs13142741",
+   "verified": "crossref",
+   "title": "Nighttime Lights and County-Level Economic Activity in the United States: 2001 to 2019"
+  },
+  {
+   "doi": "10.1016/j.rser.2015.04.042",
+   "verified": "crossref",
+   "title": "Outlook and challenges for promoting solar photovoltaic rooftops in Thailand"
+  },
+  {
+   "doi": "10.1002/j.1538-7305.1948.tb01338.x",
+   "verified": "crossref",
+   "title": "A Mathematical Theory of Communication"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "UNFCCC. Paris Agreement to the United Nations Framework Convention on "
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "International Energy Agency. Southeast Asia Energy Outlook 2022. Paris"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Ministry of Energy, Thailand. Alternative Energy Development Plan 2018"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Energy Policy and Planning Office (EPPO). Power Development Plan 2018–"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Energy Policy and Planning Office (EPPO). Draft Power Development Plan"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Energy Policy and Planning Office (EPPO). Thailand Energy Statistics 2"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Department of Alternative Energy Development and Efficiency (DEDE). Th"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "World Bank. Tracking SDG7: The Energy Progress Report 2023. Washington"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Saaty TL. The Analytic Hierarchy Process: Planning, Priority Setting, "
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Hwang CL, Yoon K. Multiple Attribute Decision Making: Methods and Appl"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Solargis. Global Solar Atlas v2: photovoltaic power output (PVOUT) lon"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Lo W. Thailand's new PDP sets 60% clean power goal as firms seek faire"
+  },
+  {
+   "doi": null,
+   "verified": "institutional-no-doi",
+   "title": "Energy Regulatory Commission (ERC), Thailand. Regulation of the Energy"
+  },
+  {
+   "doi": null,
+   "verified": "primary document, Docs/D5_POLICY_REGISTER.md P2a",
+   "title": "Energy Regulatory Commission (ERC), Thailand. Announcement of the Energy Regulat"
+  },
+  {
+   "doi": null,
+   "verified": "primary document, Docs/D5_POLICY_REGISTER.md P1",
+   "title": "Energy Regulatory Commission (ERC), Thailand. Regulation of the Energy Regulator"
+  },
+  {
+   "doi": null,
+   "verified": "primary document, Docs/D5_POLICY_REGISTER.md P9",
+   "title": "Provincial Electricity Authority (PEA), Thailand. Announcement on grid-connectio"
+  },
+  {
+   "doi": null,
+   "verified": "primary document, Docs/D5_POLICY_REGISTER.md P4",
+   "title": "Energy Conservation Promotion Act B.E. 2535 (1992), as amended by the Energy Con"
+  },
+  {
+   "doi": null,
+   "verified": "primary document, Docs/D5_POLICY_REGISTER.md P7",
+   "title": "Energy Regulatory Commission (ERC), Thailand. Public information document on the"
+  },
+  {
+   "doi": null,
+   "verified": "primary web page, Docs/D5_POLICY_REGISTER.md P12",
+   "title": "Metropolitan Electricity Authority (MEA), Thailand. Authority [web page]. https:"
+  },
+  {
+   "doi": null,
+   "verified": "agency data table, file DER_TEJ/Data/c2_fix (Table 1.5)",
+   "title": "Office of the National Economic and Social Development Council (NESDC), Thailand"
+  },
+  {
+   "doi": "10.5258/SOTON/WP00660",
+   "verified": "datacite 2026-10-09",
+   "title": "WorldPop. Global 100m Population total adjusted to match the corresponding UNPD "
+  },
+  {
+   "doi": null,
+   "verified": "osm3s.timestamp_osm_base in the Overpass responses, 2026-06-22",
+   "title": "OpenStreetMap contributors. OpenStreetMap data for Thailand, power=line, power=c"
+  },
+  {
+   "doi": "10.5270/ESA-c5d3d65",
+   "verified": "doi.org resolves to the Copernicus COP-DEM page, 2026-10-09",
+   "title": "European Space Agency. Copernicus Global Digital Elevation Model (COP-DEM GLO-30"
+  },
+  {
+   "doi": "10.2905/85005901-3A49-48DD-9D19-6261354F56FE",
+   "verified": "datacite 2026-10-09",
+   "title": "Pesaresi M. GHS-BUILT-H R2023A: GHS building height, derived from AW3D30, SRTM30"
+  },
+  {
+   "doi": null,
+   "verified": "DER/Data/download_log.json 2026-06-15",
+   "title": "GADM. Database of Global Administrative Areas, version 4.1. https://gadm.org (ac"
+  },
+  {
+   "doi": null,
+   "verified": "url fetched 2026-10-09: 74 provinces, excluding Bangkok, Nonthaburi and Samut Prakan",
+   "title": "Provincial Electricity Authority (PEA), Thailand. Business and services of PEA ["
+  }
+ ]
+}

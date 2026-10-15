@@ -1,0 +1,82 @@
+{
+ "_note": "Layer 2 of the zone-to-policy table. Every field cites entries in Docs/D5_POLICY_REGISTER.md. Only PRIMARY-VERIFIED entries are used for regulatory basis. 'Candidate policy response' = an existing instrument that the zone profile makes relevant, not a recommendation. Drafted 2026-10-08.",
+ "instruments": {
+  "I1": {
+   "name": "Residential rooftop solar, net billing (2569 round)",
+   "terms": "<= 5 kW per meter, 2.20 THB/kWh, 10 years, combined MEA+PEA target <= 500 MW, First come First served, SCOD within 2570; rooftop only, ground-mounted excluded",
+   "institutions": "ERC (regulation and invitation); PEA or MEA (purchase, connection approval)",
+   "regulatory_basis": "Energy Industry Act B.E. 2550 s.11(1),(4); ERC rooftop regulation B.E. 2562 cl.10; NEPC 1/2569 (175), 29 Apr 2569",
+   "connection_gate": "PEA: aggregate export on one distribution transformer <= 25% of transformer kVA; PEA may limit inverter size or require an export-limiting device",
+   "citation": [
+    "P2a",
+    "P8",
+    "P9"
+   ],
+   "spatial_targeting": "none: allocation is First come First served nationwide (P2a cl.10)",
+   "citation_note": "P2 (MEA announcement) applies only in the MEA service area and is cited only for MEA provinces",
+   "role": "distributed-solar deployment instrument (household rooftop)"
+  },
+  "I2": {
+   "name": "Community solar farm (Community-based Solar Power Generation Project 2569)",
+   "terms": "ground-mounted VSPP <= 10 MW per project, total <= 1,500 MW, FiT 2.1679 THB/kWh, Non-Firm 25 years",
+   "institutions": "ERC (regulation); MEA and PEA (buyers; set each project's capacity); Ministry of Interior (defines eligible community areas)",
+   "regulatory_basis": "ERC Regulation on Community-based Solar Power Generation Project B.E. 2569, Royal Gazette vol.143 special section 230 Ng, 22 Sep 2569; Energy Industry Act s.11(1),(4); NEPC 3/2568, 4/2568, 2/2569; CEPA 9/2569",
+   "connection_gate": "utility sizes each project to grid capacity at the MEA/PEA feeder connection point and to the area load profile, with no reverse flow to the EGAT transmission system (cl.7)",
+   "citation": [
+    "P1"
+   ],
+   "spatial_targeting": "tambon-level community eligibility (Ministry of Interior); the one-plant-per-tambon rule was removed by CEPA 9/2569 (P11, context only)",
+   "context_only": [
+    "P11: EPPO public summary, self-disclaimed as not an official reference; the binding outcome is cited through P1, whose preamble lists CEPA 9/2569"
+   ],
+   "role": "distributed-solar deployment instrument (community ground-mounted)"
+  },
+  "I3": {
+   "name": "Progressive residential tariff (first 200 units)",
+   "terms": "progressive rate for residential customers, applied from the September 2569 bill; average retail rate expected to fall from 3.95 to about 3.86 THB/kWh",
+   "institutions": "NEPC (policy); ERC (approval); MEA and PEA (proposal and billing)",
+   "regulatory_basis": "Energy Industry Act ss.64, 65, 67; NEPC 1/2569 (175) and 2/2569 (176)",
+   "connection_gate": "not applicable",
+   "citation": [
+    "P6",
+    "P7"
+   ],
+   "spatial_targeting": "none: nationwide tariff measure, already in force; context for affordability, not a zone-specific instrument",
+   "role": "equity context / consumer-protection instrument (not a distributed-solar deployment instrument)"
+  },
+  "I4": {
+   "name": "Energy Conservation Promotion Fund (ENCON Fund)",
+   "terms": "revolving fund, grants or subsidies to government agencies, state enterprises and private parties for energy conservation (s.25)",
+   "institutions": "Fund established in the Ministry of Energy; Fund Committee chaired by a Deputy Prime Minister, EPPO Director as secretary",
+   "regulatory_basis": "Energy Conservation Promotion Act B.E. 2535 as amended B.E. 2550, ss.24, 25, 27",
+   "connection_gate": "not applicable",
+   "citation": [
+    "P4"
+   ],
+   "spatial_targeting": "none in the Act; allocation criteria are set by the Fund Committee (s.28)",
+   "eligibility_caveat": "s.25 covers energy conservation. The Act text read here does not state that distributed solar generation is eligible, so solar capital support is listed only as 'eligibility to be confirmed'",
+   "role": "conditional candidate: eligibility for solar investment not confirmed from the Act text (s.25 covers energy conservation)"
+  },
+  "G1": {
+   "name": "Utility connection verification (distribution grid code)",
+   "terms": "network licensee must allow connection under requirements it announces",
+   "institutions": "PEA (in its service area); MEA (in its service area)",
+   "regulatory_basis": "Energy Industry Act s.81; PEA Act B.E. 2503 s.31; PEA grid-use regulation B.E. 2559; PEA connection announcement for the 2569 residential programme",
+   "connection_gate": "see I1 and I2",
+   "citation": [
+    "P10",
+    "P9"
+   ],
+   "spatial_targeting": "applies everywhere; determines feasibility case by case",
+   "role": "implementation gate (utility connection verification)"
+  }
+ },
+ "zone_rules": {
+  "all_zones": "I1 and G1 apply in every PEA zone. I1 has no spatial or equity targeting (First come First served).",
+  "nearer_or_intermediate_MV": "I2 is a candidate where PEA members are in the nearer or intermediate MV class, subject to cl.7 sizing.",
+  "farther_MV_members": "I2 only after a connection-cost and reinforcement assessment for the farther-MV provinces.",
+  "highest_poverty_zone": "Affordability: I3 already applies nationwide. Targeted capital support through I4 is a candidate only, eligibility to be confirmed.",
+  "lowest_poverty_farthest_MV_zone": "I4 energy-efficiency (conservation) support, which is within s.25 purposes.",
+  "MEA_provinces": "MEA instruments (P2) and MEA feeder data; outside the PEA scenarios."
+ }
+}

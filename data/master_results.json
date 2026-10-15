@@ -1,0 +1,815 @@
+{
+  "weights": {
+    "C1_Resource": 0.1464,
+    "C2_Equity": 0.341,
+    "C3_Demand": 0.1676,
+    "C4_Infra": 0.1767,
+    "C5_Physical": 0.1683
+  },
+  "entropy": {
+    "C1_Resource": 0.9639,
+    "C2_Equity": 0.916,
+    "C3_Demand": 0.9587,
+    "C4_Infra": 0.9565,
+    "C5_Physical": 0.9585
+  },
+  "entropy_full": {
+    "C1_Resource": 0.9639489162231676,
+    "C2_Equity": 0.915992305358542,
+    "C3_Demand": 0.9587074826105776,
+    "C4_Infra": 0.956480479150215,
+    "C5_Physical": 0.9585465019942933
+  },
+  "weights_full": {
+    "C1_Resource": 0.146356172049538,
+    "C2_Equity": 0.3410450761075707,
+    "C3_Demand": 0.1676347600758825,
+    "C4_Infra": 0.1766757005263106,
+    "C5_Physical": 0.168288291240698
+  },
+  "weights_sum": 1.0,
+  "labels": {
+    "C1_Resource": "C1 Resource Potential",
+    "C2_Equity": "C2 Equity",
+    "C3_Demand": "C3 Demand Density",
+    "C4_Infra": "C4 Infrastructure Access",
+    "C5_Physical": "C5 Physical Suitability"
+  },
+  "n_provinces": 77,
+  "pai": {
+    "min": 0.1797,
+    "max": 0.706,
+    "mean": 0.4084,
+    "sd": 0.1129,
+    "median": 0.413
+  },
+  "zones": {
+    "1": {
+      "n": 6,
+      "pai_mean": 0.6394,
+      "pai_min": 0.595,
+      "pai_max": 0.706,
+      "pai_sd": 0.0392,
+      "land_pct": 4.9
+    },
+    "2": {
+      "n": 23,
+      "pai_mean": 0.4914,
+      "pai_min": 0.457,
+      "pai_max": 0.558,
+      "pai_sd": 0.0285,
+      "land_pct": 28.2
+    },
+    "3": {
+      "n": 19,
+      "pai_mean": 0.4125,
+      "pai_min": 0.372,
+      "pai_max": 0.446,
+      "pai_sd": 0.0217,
+      "land_pct": 22.5
+    },
+    "4": {
+      "n": 17,
+      "pai_mean": 0.3259,
+      "pai_min": 0.291,
+      "pai_max": 0.361,
+      "pai_sd": 0.0202,
+      "land_pct": 21.8
+    },
+    "5": {
+      "n": 12,
+      "pai_mean": 0.2445,
+      "pai_min": 0.18,
+      "pai_max": 0.281,
+      "pai_sd": 0.0328,
+      "land_pct": 22.6
+    }
+  },
+  "top10": [
+    {
+      "rank": 1,
+      "NAME_1": "Pattani",
+      "PAI": 0.706
+    },
+    {
+      "rank": 2,
+      "NAME_1": "Nong Bua Lam Phu",
+      "PAI": 0.6455
+    },
+    {
+      "rank": 3,
+      "NAME_1": "Kalasin",
+      "PAI": 0.6428
+    },
+    {
+      "rank": 4,
+      "NAME_1": "Ang Thong",
+      "PAI": 0.6425
+    },
+    {
+      "rank": 5,
+      "NAME_1": "Chai Nat",
+      "PAI": 0.6045
+    },
+    {
+      "rank": 6,
+      "NAME_1": "Si Sa Ket",
+      "PAI": 0.595
+    },
+    {
+      "rank": 7,
+      "NAME_1": "Narathiwat",
+      "PAI": 0.5581
+    },
+    {
+      "rank": 8,
+      "NAME_1": "Mae Hong Son",
+      "PAI": 0.5408
+    },
+    {
+      "rank": 9,
+      "NAME_1": "Sing Buri",
+      "PAI": 0.5407
+    },
+    {
+      "rank": 10,
+      "NAME_1": "Tak",
+      "PAI": 0.5341
+    }
+  ],
+  "bottom5": [
+    {
+      "rank": 77,
+      "NAME_1": "Loei",
+      "PAI": 0.1797
+    },
+    {
+      "rank": 76,
+      "NAME_1": "Chiang Mai",
+      "PAI": 0.1932
+    },
+    {
+      "rank": 75,
+      "NAME_1": "Surat Thani",
+      "PAI": 0.2246
+    },
+    {
+      "rank": 74,
+      "NAME_1": "Trat",
+      "PAI": 0.2353
+    },
+    {
+      "rank": 73,
+      "NAME_1": "Chanthaburi",
+      "PAI": 0.238
+    }
+  ],
+  "corr_vs_pai": {
+    "C1_Resource": {
+      "spearman": 0.45,
+      "spearman_p": 0.0,
+      "pearson": 0.417,
+      "pearson_p": 0.0002
+    },
+    "C2_Equity": {
+      "spearman": 0.525,
+      "spearman_p": 0.0,
+      "pearson": 0.628,
+      "pearson_p": 0.0
+    },
+    "C3_Demand": {
+      "spearman": 0.453,
+      "spearman_p": 0.0,
+      "pearson": 0.365,
+      "pearson_p": 0.0011
+    },
+    "C4_Infra": {
+      "spearman": 0.18,
+      "spearman_p": 0.1176,
+      "pearson": 0.234,
+      "pearson_p": 0.0406
+    },
+    "C5_Physical": {
+      "spearman": 0.46,
+      "spearman_p": 0.0,
+      "pearson": 0.443,
+      "pearson_p": 0.0001
+    }
+  },
+  "descriptives": {
+    "C1_Resource": {
+      "mean": 0.5699,
+      "sd": 0.2841,
+      "median": 0.6121,
+      "min": 0.0,
+      "max": 1.0,
+      "cv_pct": 49.85,
+      "skew": -0.404
+    },
+    "C2_Equity": {
+      "mean": 0.2998,
+      "sd": 0.2577,
+      "median": 0.2076,
+      "min": 0.0,
+      "max": 1.0,
+      "cv_pct": 85.95,
+      "skew": 0.984
+    },
+    "C3_Demand": {
+      "mean": 0.3874,
+      "sd": 0.235,
+      "median": 0.3408,
+      "min": 0.0,
+      "max": 1.0,
+      "cv_pct": 60.67,
+      "skew": 1.091
+    },
+    "C4_Infra": {
+      "mean": 0.427,
+      "sd": 0.261,
+      "median": 0.3923,
+      "min": 0.0,
+      "max": 1.0,
+      "cv_pct": 61.12,
+      "skew": 0.684
+    },
+    "C5_Physical": {
+      "mean": 0.5976,
+      "sd": 0.3213,
+      "median": 0.6267,
+      "min": 0.0,
+      "max": 1.0,
+      "cv_pct": 53.76,
+      "skew": -0.398
+    },
+    "PAI": {
+      "mean": 0.4084,
+      "sd": 0.1129,
+      "median": 0.413,
+      "min": 0.1797,
+      "max": 0.706,
+      "cv_pct": 27.65,
+      "skew": 0.251
+    }
+  },
+  "criterion_extremes": {
+    "C1_Resource": {
+      "max": "Maha Sarakham",
+      "min": "Chumphon"
+    },
+    "C2_Equity": {
+      "max": "Mae Hong Son",
+      "min": "Rayong"
+    },
+    "C3_Demand": {
+      "max": "Bangkok Metropolis",
+      "min": "Mae Hong Son"
+    },
+    "C4_Infra": {
+      "max": "Ang Thong",
+      "min": "Mae Hong Son"
+    },
+    "C5_Physical": {
+      "max": "Bangkok Metropolis",
+      "min": "Mae Hong Son"
+    }
+  },
+  "vif": {
+    "C1_Resource": 2.165,
+    "C2_Equity": 1.258,
+    "C3_Demand": 3.07,
+    "C4_Infra": 2.569,
+    "C5_Physical": 3.296
+  },
+  "vif_max": 3.296,
+  "zone_criterion_means": {
+    "1": {
+      "C1_Resource": 0.7826,
+      "C2_Equity": 0.7365,
+      "C3_Demand": 0.4437,
+      "C4_Infra": 0.4124,
+      "C5_Physical": 0.852
+    },
+    "2": {
+      "C1_Resource": 0.6623,
+      "C2_Equity": 0.3841,
+      "C3_Demand": 0.4946,
+      "C4_Infra": 0.5357,
+      "C5_Physical": 0.7232
+    },
+    "3": {
+      "C1_Resource": 0.6269,
+      "C2_Equity": 0.2542,
+      "C3_Demand": 0.4182,
+      "C4_Infra": 0.4366,
+      "C5_Physical": 0.6559
+    },
+    "4": {
+      "C1_Resource": 0.4976,
+      "C2_Equity": 0.1867,
+      "C3_Demand": 0.3084,
+      "C4_Infra": 0.3697,
+      "C5_Physical": 0.4717
+    },
+    "5": {
+      "C1_Resource": 0.2983,
+      "C2_Equity": 0.1526,
+      "C3_Demand": 0.2168,
+      "C4_Infra": 0.2921,
+      "C5_Physical": 0.3156
+    }
+  },
+  "equity_vs_efficiency_only": {
+    "spearman": -0.394,
+    "p": 0.0003953
+  },
+  "equity_vs_each_efficiency": {
+    "C1_Resource": {
+      "spearman": -0.005,
+      "p": 0.9662
+    },
+    "C3_Demand": {
+      "spearman": -0.279,
+      "p": 0.0138
+    },
+    "C4_Infra": {
+      "spearman": -0.439,
+      "p": 0.0001
+    },
+    "C5_Physical": {
+      "spearman": -0.333,
+      "p": 0.0031
+    }
+  },
+  "equity_removal": {
+    "spearman_full_vs_eff": 0.482,
+    "max_rank_shift": 65,
+    "n_shift_gt10": 56
+  },
+  "morans_I": {
+    "I": 0.2472,
+    "z": 3.389,
+    "p": 0.003,
+    "p_norm": 0.0007002,
+    "permutations": 999,
+    "n_HH": 5,
+    "n_LL": 3,
+    "n_HL": 3,
+    "n_ns": 64
+  },
+  "lisa_HH": [
+    "Maha Sarakham",
+    "Narathiwat",
+    "Roi Et",
+    "Sing Buri",
+    "Yala"
+  ],
+  "lisa_LL": [
+    "Phangnga",
+    "Phitsanulok",
+    "Prachuap Khiri Khan"
+  ],
+  "sensitivity": [
+    {
+      "Comparison": "EWM vs Equal Weights (1/5 each)",
+      "Spearman ρ": 0.7506,
+      "Spearman p": "<0.001",
+      "Kendall τ": 0.5728,
+      "Kendall p": "<0.001",
+      "RMSE (rank units)": 15.697,
+      "MAE (rank units)": 12.727,
+      "Max |Δrank|": 41,
+      "N provinces |Δrank| > 10": 43,
+      "N provinces |Δrank| > 5": 63
+    },
+    {
+      "Comparison": "EWM vs Expert Weights (equity-first)",
+      "Spearman ρ": 0.9605,
+      "Spearman p": "<0.001",
+      "Kendall τ": 0.8483,
+      "Kendall p": "<0.001",
+      "RMSE (rank units)": 6.25,
+      "MAE (rank units)": 4.701,
+      "Max |Δrank|": 19,
+      "N provinces |Δrank| > 10": 11,
+      "N provinces |Δrank| > 5": 26
+    }
+  ],
+  "sensitivity_rho": {
+    "equal": 0.7506,
+    "expert": 0.9605
+  },
+  "validation": {
+    "n_plants": 332,
+    "pai_vs_count_spearman": -0.039,
+    "p": 0.7336,
+    "efficiency_only_vs_count_spearman": 0.38,
+    "efficiency_only_p": 0.000652,
+    "equity_vs_count_spearman": -0.394,
+    "equity_p": 0.0003891
+  },
+  "spatial_permutation": {
+    "province": [
+      {
+        "label": "C2 Equity vs efficiency-only composite",
+        "rho": -0.394,
+        "p_classical": 0.0003953,
+        "p_spatial": 0.0006,
+        "n_sim": 4999
+      },
+      {
+        "label": "efficiency-only composite vs installation count",
+        "rho": 0.38,
+        "p_classical": 0.000652,
+        "p_spatial": 0.0004,
+        "n_sim": 4999
+      },
+      {
+        "label": "C2 Equity vs installation count",
+        "rho": -0.394,
+        "p_classical": 0.0003891,
+        "p_spatial": 0.0004,
+        "n_sim": 4999
+      },
+      {
+        "label": "full PAI vs installation count",
+        "rho": -0.039,
+        "p_classical": 0.7336,
+        "p_spatial": 0.7368,
+        "n_sim": 4999
+      }
+    ],
+    "district": [
+      {
+        "label": "C2 Equity vs efficiency-only composite (district)",
+        "rho": 0.064,
+        "p_classical": 0.6592,
+        "p_spatial": 0.6506,
+        "n_sim": 4999
+      }
+    ]
+  },
+  "p_spatial": {
+    "C2 Equity vs efficiency-only composite": 0.0006,
+    "efficiency-only composite vs installation count": 0.0004,
+    "C2 Equity vs installation count": 0.0004,
+    "full PAI vs installation count": 0.7368,
+    "C2 Equity vs efficiency-only composite (district)": 0.6506
+  },
+  "zone_validation": {
+    "n_plants": 332,
+    "zone_table": [
+      {
+        "zone": 1,
+        "n_provinces": 6,
+        "land_pct": 4.9,
+        "solar_obs": 6,
+        "solar_obs_pct": 1.8,
+        "expected": 16.4,
+        "enrichment": 0.367
+      },
+      {
+        "zone": 2,
+        "n_provinces": 23,
+        "land_pct": 28.2,
+        "solar_obs": 122,
+        "solar_obs_pct": 36.7,
+        "expected": 93.6,
+        "enrichment": 1.303
+      },
+      {
+        "zone": 3,
+        "n_provinces": 19,
+        "land_pct": 22.5,
+        "solar_obs": 98,
+        "solar_obs_pct": 29.5,
+        "expected": 74.7,
+        "enrichment": 1.312
+      },
+      {
+        "zone": 4,
+        "n_provinces": 17,
+        "land_pct": 21.8,
+        "solar_obs": 67,
+        "solar_obs_pct": 20.2,
+        "expected": 72.4,
+        "enrichment": 0.926
+      },
+      {
+        "zone": 5,
+        "n_provinces": 12,
+        "land_pct": 22.6,
+        "solar_obs": 39,
+        "solar_obs_pct": 11.7,
+        "expected": 75.0,
+        "enrichment": 0.52
+      }
+    ],
+    "chi2": 40.2,
+    "df": 4,
+    "p": 4.01e-08,
+    "zone1_hit_rate": 0.018,
+    "zone1_land_share": 0.049,
+    "zone1_enrichment": 0.367,
+    "zone12_hit_rate": 0.386,
+    "zone12_land_share": 0.331
+  },
+  "maup": {
+    "province": {
+      "n": 77,
+      "weights": {
+        "C1_Resource": 0.1464,
+        "C2_Equity": 0.341,
+        "C3_Demand": 0.1677,
+        "C4_Infra": 0.1767,
+        "C5_Physical": 0.1683
+      },
+      "dominant_criterion": "C2_Equity",
+      "equity_vs_efficiency_rho": -0.394,
+      "equity_vs_efficiency_p": 0.0003953,
+      "top_unit": "Pattani",
+      "note": "baseline — paper unit"
+    },
+    "region": {
+      "n": 6,
+      "weights": {
+        "C1_Resource": 0.1575,
+        "C2_Equity": 0.2308,
+        "C3_Demand": 0.2288,
+        "C4_Infra": 0.173,
+        "C5_Physical": 0.2099
+      },
+      "dominant_criterion": "C2_Equity",
+      "equity_vs_efficiency_rho": -0.943,
+      "equity_vs_efficiency_p": 0.004805,
+      "top_unit": "Northeast",
+      "note": "NESDB 6-region grouping (conventional); n=6 -> weights fragile"
+    },
+    "amphoe": {
+      "n": 928,
+      "weights": {
+        "C1_Resource": 0.118,
+        "C2_Equity": 0.3277,
+        "C3_Demand": 0.1124,
+        "C4_Infra": 0.3182,
+        "C5_Physical": 0.1236
+      },
+      "dominant_criterion": "C2_Equity",
+      "equity_vs_efficiency_rho": -0.315,
+      "equity_vs_efficiency_p": 8.413e-23,
+      "top_unit": "Muang Pattani",
+      "note": "GADM ADM-2; 928/928 amphoe with full data"
+    },
+    "province_vs_amphoe_mean": {
+      "spearman": 0.905,
+      "p": 1.623e-29,
+      "n": 77
+    },
+    "equity_weight_rank_by_scale": {
+      "region": 1,
+      "province": 1,
+      "amphoe": 1
+    }
+  },
+  "zone_grid_km": {
+    "1": {
+      "mean_km": 12.8,
+      "min_km": 2.4,
+      "max_km": 20.3
+    },
+    "2": {
+      "mean_km": 11.7,
+      "min_km": 2.2,
+      "max_km": 55.2
+    },
+    "3": {
+      "mean_km": 11.4,
+      "min_km": 3.6,
+      "max_km": 25.2
+    },
+    "4": {
+      "mean_km": 15.6,
+      "min_km": 6.9,
+      "max_km": 46.6
+    },
+    "5": {
+      "mean_km": 16.4,
+      "min_km": 6.2,
+      "max_km": 30.4
+    }
+  },
+  "cluster_stability": {
+    "silhouette": {
+      "2": 0.579,
+      "3": 0.595,
+      "4": 0.531,
+      "5": 0.574,
+      "6": 0.576,
+      "7": 0.565,
+      "8": 0.559
+    },
+    "silhouette_best_k": 3,
+    "k_chosen": 5,
+    "silhouette_k5": 0.574,
+    "silhouette_max": 0.595,
+    "gap": "not recomputed (no producing script for the original values, not used in the TEJ manuscript)",
+    "produced_by": "DER_TEJ/Scripts/rerun_c2fix_extras.py"
+  },
+  "gridfinder": {
+    "zone_mv_dist_km": {
+      "1": 1.3,
+      "2": 2.16,
+      "3": 1.65,
+      "4": 2.88,
+      "5": 3.6
+    },
+    "pai_corr_rho": -0.448,
+    "pai_corr_p": 0.0,
+    "n_sample": 5172
+  },
+  "pai_mv": {
+    "weights_mv": {
+      "C1_Resource": 0.0898,
+      "C2_Equity": 0.2093,
+      "C3_Demand": 0.1029,
+      "C4_MV": 0.4947,
+      "C5_Physical": 0.1033
+    },
+    "weights_published": {
+      "C1_Resource": 0.1464,
+      "C2_Equity": 0.341,
+      "C3_Demand": 0.1676,
+      "C4_Infra": 0.1767,
+      "C5_Physical": 0.1683
+    },
+    "spearman_paiMV_vs_published": 0.941,
+    "p": 4.57e-37,
+    "spearman_C4trans_vs_C4mv": 0.649,
+    "rank_shift_max": 24,
+    "rank_shift_n_gt10": 9,
+    "zone1_baseline_n": 6,
+    "zone1_mv_n": 1,
+    "zone1_retained": 0,
+    "efficiency_equity_mv": -0.313,
+    "efficiency_equity_mv_p": 0.00551,
+    "efficiency_equity_published": -0.391,
+    "c4mv_skew": 4.15,
+    "c4trans_skew": 0.7,
+    "c4mv_weight": 0.495,
+    "zone1_mv_members": [
+      "Bangkok Metropolis"
+    ]
+  },
+  "lisa_fdr": {
+    "n_raw_sig": 13,
+    "n_fdr_sig": 0,
+    "min_p_bh": 0.077,
+    "method": "Benjamini-Hochberg",
+    "n_tests": 77,
+    "produced_by": "DER_TEJ/Scripts/rerun_c2fix_extras.py"
+  },
+  "bootstrap": {
+    "B": 4999,
+    "seed": 42,
+    "weights_baseline": {
+      "C1_Resource": 0.1464,
+      "C2_Equity": 0.341,
+      "C3_Demand": 0.1676,
+      "C4_Infra": 0.1767,
+      "C5_Physical": 0.1683
+    },
+    "weight_ci": {
+      "C1_Resource": [
+        0.095,
+        0.207
+      ],
+      "C2_Equity": [
+        0.262,
+        0.411
+      ],
+      "C3_Demand": [
+        0.126,
+        0.209
+      ],
+      "C4_Infra": [
+        0.141,
+        0.246
+      ],
+      "C5_Physical": [
+        0.121,
+        0.22
+      ]
+    },
+    "zone1_top6": [
+      "Ang Thong",
+      "Chai Nat",
+      "Kalasin",
+      "Nong Bua Lam Phu",
+      "Pattani",
+      "Si Sa Ket"
+    ],
+    "stability_by_k": {
+      "2": {
+        "top_cluster_size": 43,
+        "baseline_zone1_inside": 6
+      },
+      "3": {
+        "top_cluster_size": 10,
+        "baseline_zone1_inside": 6
+      },
+      "4": {
+        "top_cluster_size": 6,
+        "baseline_zone1_inside": 6
+      },
+      "5": {
+        "top_cluster_size": 6,
+        "baseline_zone1_inside": 6
+      }
+    },
+    "note": "conditional uncertainty: resamples 77 province observations only, does not propagate raster/source-data error"
+  },
+  "ser_check": {
+    "n": 77,
+    "c2_vs_vuln": {
+      "rho": 0.663,
+      "p": 0.0
+    },
+    "c2_vs_poverty": {
+      "rho": 0.788,
+      "p": 0.0
+    },
+    "pai_vs_resilience": {
+      "rho": -0.313,
+      "p": 0.0056
+    },
+    "pai_vs_vuln": {
+      "rho": 0.256,
+      "p": 0.0246
+    }
+  },
+  "district": {
+    "n": 50,
+    "pai_min": 0.317,
+    "pai_max": 0.827,
+    "pai_mean": 0.586,
+    "equity_vs_efficiency_only": 0.064,
+    "weights": {
+      "C1_RooftopYield": 0.2762,
+      "C2_Equity": 0.2628,
+      "C3_Demand": 0.1149,
+      "C4_Infra": 0.346
+    },
+    "corr_vs_pai": {
+      "C1_RooftopYield": 0.398,
+      "C2_Equity": 0.444,
+      "C3_Demand": 0.257,
+      "C4_Infra": 0.721
+    },
+    "top_khet": [
+      {
+        "name": "Samphantawong",
+        "rank": 1,
+        "pai": 0.827,
+        "vuln": 0.756,
+        "infra": 0.798
+      },
+      {
+        "name": "Bang Rak",
+        "rank": 2,
+        "pai": 0.803,
+        "vuln": 0.667,
+        "infra": 1.0
+      },
+      {
+        "name": "Rat Burana",
+        "rank": 3,
+        "pai": 0.776,
+        "vuln": 0.876,
+        "infra": 0.719
+      },
+      {
+        "name": "Bang Su",
+        "rank": 4,
+        "pai": 0.753,
+        "vuln": 0.607,
+        "infra": 0.947
+      },
+      {
+        "name": "Din Dang",
+        "rank": 5,
+        "pai": 0.748,
+        "vuln": 0.557,
+        "infra": 0.783
+      },
+      {
+        "name": "Chom Thong",
+        "rank": 6,
+        "pai": 0.731,
+        "vuln": 0.707,
+        "infra": 0.658
+      }
+    ],
+    "vuln_vs_pai_spearman": 0.444,
+    "n_top10_highvuln": 10
+  }
+}

@@ -1,0 +1,5 @@
+﻿comparison,spearman_rho,p_value
+our C2 (poverty) vs SER vulnerability,0.663,0.0
+our C2 (poverty) vs SER poverty proxy,0.788,0.0
+our PAI vs SER resilience,-0.313,0.0056
+our PAI vs SER vulnerability,0.256,0.0246

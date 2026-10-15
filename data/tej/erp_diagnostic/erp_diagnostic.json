@@ -1,0 +1,123 @@
+{
+ "status": "post hoc diagnostic, not a pre-specified sensitivity analysis",
+ "erp_raster": "C4_ERP_proxy_NTL_90m.tif",
+ "rho_erp_c3": 0.824,
+ "rho_erp_c2": -0.376,
+ "baseline": {
+  "zone1": [
+   "Ang Thong",
+   "Chai Nat",
+   "Kalasin",
+   "Nong Bua Lam Phu",
+   "Pattani",
+   "Si Sa Ket"
+  ],
+  "s2_mean_poverty_pct": 15.93,
+  "s2_median_line_km": 15.7
+ },
+ "variants": {
+  "linear": {
+   "transform": "linear [0,1], 2nd-98th clip",
+   "vif_erp": 3.68,
+   "weights": {
+    "C1_Resource": 0.074,
+    "C2_Equity": 0.172,
+    "C3_Demand": 0.085,
+    "C4_Infra": 0.089,
+    "C5_Physical": 0.085,
+    "ERP": 0.495
+   },
+   "rho_equity_vs_efficiency": -0.416,
+   "p": 0.00017,
+   "rho_pai6_vs_pai": 0.846,
+   "zone_sizes": [
+    3,
+    2,
+    9,
+    35,
+    28
+   ],
+   "zone1": [
+    "Bangkok Metropolis",
+    "Nonthaburi",
+    "Samut Prakan"
+   ],
+   "s2_out": [
+    "Narathiwat",
+    "Phatthalung",
+    "Sa Kaeo",
+    "Sakon Nakhon",
+    "Si Sa Ket",
+    "Surin",
+    "Tak",
+    "Yala"
+   ],
+   "s2_in": [
+    "Chon Buri",
+    "Nakhon Pathom",
+    "Pathum Thani",
+    "Phra Nakhon Si Ayutthaya",
+    "Phuket",
+    "Rayong",
+    "Samut Sakhon",
+    "Samut Songkhram"
+   ],
+   "s2_mean_poverty_pct": 4.57,
+   "s2_median_line_km": 3.7
+  },
+  "log": {
+   "transform": "log(1 + 100x), then linear [0,1], 2nd-98th clip",
+   "vif_erp": 8.79,
+   "weights": {
+    "C1_Resource": 0.111,
+    "C2_Equity": 0.259,
+    "C3_Demand": 0.127,
+    "C4_Infra": 0.134,
+    "C5_Physical": 0.128,
+    "ERP": 0.241
+   },
+   "rho_equity_vs_efficiency": -0.412,
+   "p": 0.0002,
+   "rho_pai6_vs_pai": 0.893,
+   "zone_sizes": [
+    10,
+    13,
+    26,
+    17,
+    11
+   ],
+   "zone1": [
+    "Ang Thong",
+    "Bangkok Metropolis",
+    "Chai Nat",
+    "Nonthaburi",
+    "Pathum Thani",
+    "Pattani",
+    "Phra Nakhon Si Ayutthaya",
+    "Samut Prakan",
+    "Samut Sakhon",
+    "Sing Buri"
+   ],
+   "s2_out": [
+    "Mae Hong Son",
+    "Phatthalung",
+    "Sa Kaeo",
+    "Sakon Nakhon",
+    "Surin",
+    "Tak",
+    "Yala"
+   ],
+   "s2_in": [
+    "Chon Buri",
+    "Nakhon Pathom",
+    "Pathum Thani",
+    "Phra Nakhon Si Ayutthaya",
+    "Phuket",
+    "Samut Sakhon",
+    "Samut Songkhram"
+   ],
+   "s2_mean_poverty_pct": 6.15,
+   "s2_median_line_km": 3.7
+  }
+ }
+}

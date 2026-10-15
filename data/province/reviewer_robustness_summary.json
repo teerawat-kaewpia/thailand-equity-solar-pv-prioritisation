@@ -1,0 +1,153 @@
+{
+  "input": {
+    "n_provinces": 77,
+    "criteria": [
+      "C1_Resource",
+      "C2_Equity",
+      "C3_Demand",
+      "C4_Infra",
+      "C5_Physical"
+    ],
+    "baseline_pai_max_abs_error_vs_input": 2.220446049250313e-16
+  },
+  "bootstrap": {
+    "draws": 4999,
+    "conditioning": "Final transformed and normalised province matrix held fixed; provinces resampled with replacement.",
+    "weights": [
+      {
+        "criterion": "C1_Resource",
+        "baseline_weight": 0.146356,
+        "bootstrap_mean": 0.145179,
+        "bootstrap_sd": 0.028228,
+        "bootstrap_ci95_low": 0.09698,
+        "bootstrap_ci95_high": 0.20607
+      },
+      {
+        "criterion": "C2_Equity",
+        "baseline_weight": 0.341045,
+        "bootstrap_mean": 0.335469,
+        "bootstrap_sd": 0.037772,
+        "bootstrap_ci95_low": 0.263974,
+        "bootstrap_ci95_high": 0.411573
+      },
+      {
+        "criterion": "C3_Demand",
+        "baseline_weight": 0.167635,
+        "bootstrap_mean": 0.167385,
+        "bootstrap_sd": 0.021317,
+        "bootstrap_ci95_low": 0.127629,
+        "bootstrap_ci95_high": 0.210278
+      },
+      {
+        "criterion": "C4_Infra",
+        "baseline_weight": 0.176676,
+        "bootstrap_mean": 0.182381,
+        "bootstrap_sd": 0.026307,
+        "bootstrap_ci95_low": 0.138307,
+        "bootstrap_ci95_high": 0.24398
+      },
+      {
+        "criterion": "C5_Physical",
+        "baseline_weight": 0.168288,
+        "bootstrap_mean": 0.169586,
+        "bootstrap_sd": 0.025558,
+        "bootstrap_ci95_low": 0.122066,
+        "bootstrap_ci95_high": 0.221715
+      }
+    ]
+  },
+  "dirichlet": {
+    "draws": 4999,
+    "kappa": 50.0,
+    "conditioning": "Final criterion matrix held fixed; EWM baseline weights perturbed.",
+    "zone1_membership_probability": [
+      {
+        "NAME_1": "Pattani",
+        "probability_zone1": 0.9682
+      },
+      {
+        "NAME_1": "Nong Bua Lam Phu",
+        "probability_zone1": 0.8892
+      },
+      {
+        "NAME_1": "Kalasin",
+        "probability_zone1": 0.8776
+      },
+      {
+        "NAME_1": "Ang Thong",
+        "probability_zone1": 0.9268
+      },
+      {
+        "NAME_1": "Chai Nat",
+        "probability_zone1": 0.7752
+      },
+      {
+        "NAME_1": "Si Sa Ket",
+        "probability_zone1": 0.7443
+      }
+    ]
+  },
+  "cluster_sensitivity": [
+    {
+      "k": 2,
+      "silhouette": 0.5788,
+      "top_tier_n": 43,
+      "top_tier_members": "Ang Thong; Bangkok Metropolis; Buri Ram; Chai Nat; Chiang Rai; Kalasin; Khon Kaen; Lop Buri; Mae Hong Son; Maha Sarakham; Mukdahan; Nakhon Pathom; Nakhon Phanom; Nakhon Ratchasima; Nakhon Sawan; Nakhon Si Thammarat; Narathiwat; Nong Bua Lam Phu; Nonthaburi; Pathum Thani; Pattani; Phatthalung; Phichit; Phra Nakhon Si Ayutthaya; Phuket; Ranong; Roi Et; Sa Kaeo; Sakon Nakhon; Samut Prakan; Samut Sakhon; Samut Songkhram; Saraburi; Si Sa Ket; Sing Buri; Sukhothai; Suphan Buri; Surin; Tak; Trang; Ubon Ratchathani; Udon Thani; Yala",
+      "overlap_with_k5_zone1_n": 6,
+      "overlap_with_k5_zone1_pct": 100.0
+    },
+    {
+      "k": 3,
+      "silhouette": 0.5947,
+      "top_tier_n": 10,
+      "top_tier_members": "Ang Thong; Chai Nat; Kalasin; Mae Hong Son; Narathiwat; Nong Bua Lam Phu; Pattani; Si Sa Ket; Sing Buri; Tak",
+      "overlap_with_k5_zone1_n": 6,
+      "overlap_with_k5_zone1_pct": 100.0
+    },
+    {
+      "k": 4,
+      "silhouette": 0.539,
+      "top_tier_n": 6,
+      "top_tier_members": "Ang Thong; Chai Nat; Kalasin; Nong Bua Lam Phu; Pattani; Si Sa Ket",
+      "overlap_with_k5_zone1_n": 6,
+      "overlap_with_k5_zone1_pct": 100.0
+    },
+    {
+      "k": 5,
+      "silhouette": 0.5735,
+      "top_tier_n": 6,
+      "top_tier_members": "Ang Thong; Chai Nat; Kalasin; Nong Bua Lam Phu; Pattani; Si Sa Ket",
+      "overlap_with_k5_zone1_n": 6,
+      "overlap_with_k5_zone1_pct": 100.0
+    },
+    {
+      "k": 6,
+      "silhouette": 0.5763,
+      "top_tier_n": 4,
+      "top_tier_members": "Ang Thong; Kalasin; Nong Bua Lam Phu; Pattani",
+      "overlap_with_k5_zone1_n": 4,
+      "overlap_with_k5_zone1_pct": 66.6667
+    },
+    {
+      "k": 7,
+      "silhouette": 0.5653,
+      "top_tier_n": 4,
+      "top_tier_members": "Ang Thong; Kalasin; Nong Bua Lam Phu; Pattani",
+      "overlap_with_k5_zone1_n": 4,
+      "overlap_with_k5_zone1_pct": 66.6667
+    },
+    {
+      "k": 8,
+      "silhouette": 0.559,
+      "top_tier_n": 1,
+      "top_tier_members": "Pattani",
+      "overlap_with_k5_zone1_n": 1,
+      "overlap_with_k5_zone1_pct": 16.6667
+    }
+  ],
+  "lisa_fdr": {
+    "n_unadjusted_significant": 13,
+    "n_fdr_significant": 0,
+    "fdr_significant_units": []
+  }
+}

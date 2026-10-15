@@ -1,0 +1,4 @@
+﻿scenario,label,provinces,regions,poverty_weighted_beneficiary_equiv,mean_poverty_pct,mean_pvout_kwh_kwp,median_dist_line_km,median_dist_mv_km,max_province_share_pct,share_B_nearer_pct,share_B_intermediate_pct,share_B_farther_pct
+S1,Population-proportional baseline,74,6,62184,6.22,1469.9,11.8,1.77,4.4,67.4,28.4,4.2
+S2,Equity-targeted support,15,6,159292,15.93,1476.9,15.7,1.7,11.6,77.3,13.2,9.5
+S3,Resource-and-infrastructure-oriented comparator,15,4,21241,2.12,1491.2,3.7,1.16,16.5,100.0,0.0,0.0
