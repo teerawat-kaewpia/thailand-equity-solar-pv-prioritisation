@@ -1,0 +1,4 @@
+﻿scenario,label,provinces,regions,poverty_weighted_beneficiary_equiv,poverty_weighted_share_of_B_pct,mean_poverty_pct,mean_pvout_kwh_kwp,median_dist_line_km,mv_metrics
+S1,Uniform support,77,6,54979.0,5.5,5.5,1469.7,8.6,pending MV definition
+S2,Equity-targeted support,15,6,87276.0,8.73,8.73,1471.2,2.7,pending MV definition
+S3,Resource-and-infrastructure-oriented comparator,15,3,21082.0,2.11,2.11,1482.0,2.8,pending MV definition

@@ -1,0 +1,8 @@
+{
+ "n_raw_sig": 13,
+ "n_fdr_sig": 0,
+ "min_p_bh": 0.077,
+ "method": "Benjamini-Hochberg",
+ "n_tests": 77,
+ "produced_by": "DER_TEJ/Scripts/rerun_c2fix_extras.py"
+}

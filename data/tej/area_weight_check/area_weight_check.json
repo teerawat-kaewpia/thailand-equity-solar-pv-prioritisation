@@ -1,0 +1,44 @@
+{
+ "grid": {
+  "crs": "EPSG:4326",
+  "cell_deg": 0.0008333333333333334,
+  "ns_m": 92.8,
+  "ew_m_at_6N": 92.3,
+  "ew_m_at_20N": 87.2
+ },
+ "within_province_area_weight_spread_max_pct": 1.71,
+ "unweighted_reproduces_run4": {
+  "max_abs_PAI_diff": 5e-05,
+  "zones_agree": 77,
+  "S2_same": true,
+  "S3_same": true
+ },
+ "max_relative_change_of_province_means": {
+  "C1_Resource": 0.000649,
+  "C2_Equity": 0.0,
+  "C3_Demand": 0.001712,
+  "C4_Infra": 0.001974,
+  "C5_Physical": 0.001101
+ },
+ "weights_unweighted": {
+  "C1_Resource": 0.1464,
+  "C2_Equity": 0.341,
+  "C3_Demand": 0.1676,
+  "C4_Infra": 0.1767,
+  "C5_Physical": 0.1683
+ },
+ "weights_area_weighted": {
+  "C1_Resource": 0.1464,
+  "C2_Equity": 0.3411,
+  "C3_Demand": 0.1675,
+  "C4_Infra": 0.1767,
+  "C5_Physical": 0.1683
+ },
+ "max_abs_PAI_change": 0.00019,
+ "spearman_rank": 0.99997,
+ "max_rank_change": 1,
+ "zones_agree_77": 77,
+ "zone_changes": [],
+ "S2_same": true,
+ "S3_same": true
+}

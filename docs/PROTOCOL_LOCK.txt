@@ -1,0 +1,13 @@
+SCENARIO_PROTOCOL.md
+sha256: 9b25fad39a620800d9af9630c489f6aa96762cdc90145be5f4d3969d667d0c77
+locked: 2026-10-06 21:34:00 (before any scenario, screening-class or PEA-linkage result was computed)
+
+Amendment A1 appended 2026-10-06 21:39:13 (after run 1, thresholds unchanged). Text above '## Amendments' unchanged: verify by hashing the file truncated at that heading.
+sha256 of pre-amendment body (lines before '## Amendments'): 9d869c66eeddb99fe399e8bc571aa306870fda1de56b015ccb49af4323659f9a
+
+Amendments A2 (after scenario run 1) + A3 (before any MV result) + legacy-file note appended 2026-10-08 09:24:29, user-approved. Original body hash re-verified: 9b25fad3 unchanged.
+
+Amendment A4 (C2 input correction) appended 2026-10-09 15:06:48, before any corrected result. Original body hash re-verified: 9d869c66
+
+Amendment A5 (C2 single province-level scaling) appended 2026-10-10 14:16:37, after the single-clip diagnostic, before Run 4 results. Pre-amendment body hash re-verified: 9d869c66. Full file sha256: e2f601cec06db02ebd22be58e0b94a6807ba20ff28dd4b5ecf95bce01fc6d65e
+Typographic repair 2026-10-10 14:34:06: control characters left by a shell heredoc in the A4 file path were restored to the original backslash path (no wording change). Pre-amendment body hash re-verified: 9d869c66. Full file sha256 now: 405daa4b44a32186bc14aca7b667c47d2adc47d83d7134ec2b9334fd3314e954

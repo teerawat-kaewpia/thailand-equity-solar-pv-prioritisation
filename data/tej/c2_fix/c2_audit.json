@@ -1,0 +1,26 @@
+{
+ "source": "D:\\Clude Code GIS\\Energy\\Energy map\\สถิติความยากจนและการกระจายรายได้_2567.xlsx",
+ "table": "1.5",
+ "rule": "2565 (2022) first, then 2566, 2564, 2567, 2563",
+ "n": 77,
+ "n_differing": 2,
+ "differing": [
+  {
+   "NAME_1": "Bangkok Metropolis",
+   "prov_th_der": "เชียงใหม่",
+   "poverty_pct_der": 3.085320743856345,
+   "prov_th": "กรุงเทพมหานคร",
+   "poverty_pct": 1.368591136829934,
+   "year_used": 2565
+  },
+  {
+   "NAME_1": "Chaiyaphum",
+   "prov_th_der": "ชัยนาท",
+   "poverty_pct_der": 15.257536533765846,
+   "prov_th": "ชัยภูมิ",
+   "poverty_pct": 1.1747612344613467,
+   "year_used": 2565
+  }
+ ],
+ "cause": "GADM 4.1 NL_NAME_1 is 'จังหวัดเชียงใหม่' for Bangkok Metropolis and 'จังหวัดชัยนาท' for Chaiyaphum; the DER builder joined on NL_NAME_1"
+}

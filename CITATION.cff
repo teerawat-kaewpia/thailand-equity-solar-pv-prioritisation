@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: If you use this code or data, please cite the article and this repository.
+title: "Equity-aware spatial prioritisation of distributed solar PV in Thailand: code and data"
+authors:
+  - family-names: Saengsuwan
+    given-names: Thanapon
+    affiliation: Chiang Rai Rajabhat University
+  - family-names: Kaewpia
+    given-names: Teerawat
+    affiliation: Chiang Rai Rajabhat University
+repository-code: https://github.com/teerawat-kaewpia/thailand-equity-solar-pv-prioritisation
+license:
+  - MIT
+  - CC-BY-4.0
+version: 1.0.0
+date-released: 2026-10-15
+# doi: to be added after the Zenodo release

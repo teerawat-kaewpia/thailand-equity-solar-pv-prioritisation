@@ -1,0 +1,41 @@
+{
+  "province": [
+    {
+      "label": "C2 Equity vs efficiency-only composite",
+      "rho": -0.394,
+      "p_classical": 0.0003953,
+      "p_spatial": 0.0006,
+      "n_sim": 4999
+    },
+    {
+      "label": "efficiency-only composite vs installation count",
+      "rho": 0.38,
+      "p_classical": 0.000652,
+      "p_spatial": 0.0004,
+      "n_sim": 4999
+    },
+    {
+      "label": "C2 Equity vs installation count",
+      "rho": -0.394,
+      "p_classical": 0.0003891,
+      "p_spatial": 0.0004,
+      "n_sim": 4999
+    },
+    {
+      "label": "full PAI vs installation count",
+      "rho": -0.039,
+      "p_classical": 0.7336,
+      "p_spatial": 0.7368,
+      "n_sim": 4999
+    }
+  ],
+  "district": [
+    {
+      "label": "C2 Equity vs efficiency-only composite (district)",
+      "rho": 0.064,
+      "p_classical": 0.6592,
+      "p_spatial": 0.6506,
+      "n_sim": 4999
+    }
+  ]
+}

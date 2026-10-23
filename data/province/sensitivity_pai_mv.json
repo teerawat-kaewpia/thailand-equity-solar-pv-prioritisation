@@ -1,0 +1,33 @@
+{
+ "weights_mv": {
+  "C1_Resource": 0.0898,
+  "C2_Equity": 0.2093,
+  "C3_Demand": 0.1029,
+  "C4_MV": 0.4947,
+  "C5_Physical": 0.1033
+ },
+ "weights_published": {
+  "C1_Resource": 0.1464,
+  "C2_Equity": 0.341,
+  "C3_Demand": 0.1676,
+  "C4_Infra": 0.1767,
+  "C5_Physical": 0.1683
+ },
+ "spearman_paiMV_vs_published": 0.941,
+ "p": 4.57e-37,
+ "spearman_C4trans_vs_C4mv": 0.649,
+ "rank_shift_max": 24,
+ "rank_shift_n_gt10": 9,
+ "zone1_baseline_n": 6,
+ "zone1_mv_n": 1,
+ "zone1_retained": 0,
+ "efficiency_equity_mv": -0.313,
+ "efficiency_equity_mv_p": 0.00551,
+ "efficiency_equity_published": -0.391,
+ "c4mv_skew": 4.15,
+ "c4trans_skew": 0.7,
+ "c4mv_weight": 0.495,
+ "zone1_mv_members": [
+  "Bangkok Metropolis"
+ ]
+}

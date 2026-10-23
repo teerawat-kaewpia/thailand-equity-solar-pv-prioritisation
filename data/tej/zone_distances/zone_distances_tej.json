@@ -1,0 +1,85 @@
+{
+ "zones": {
+  "1": {
+   "n": 6,
+   "line_km_mean": 12.8,
+   "line_km_min": 2.4,
+   "line_km_max": 20.3,
+   "mv_km_mean": 1.32,
+   "mv_km_min": 0.87,
+   "mv_km_max": 1.7
+  },
+  "2": {
+   "n": 23,
+   "line_km_mean": 13.2,
+   "line_km_min": 2.2,
+   "line_km_max": 74.3,
+   "mv_km_mean": 2.22,
+   "mv_km_min": 0.68,
+   "mv_km_max": 9.49
+  },
+  "3": {
+   "n": 19,
+   "line_km_mean": 11.9,
+   "line_km_min": 3.6,
+   "line_km_max": 25.6,
+   "mv_km_mean": 1.85,
+   "mv_km_min": 1.19,
+   "mv_km_max": 3.36
+  },
+  "4": {
+   "n": 17,
+   "line_km_mean": 16.0,
+   "line_km_min": 6.9,
+   "line_km_max": 58.5,
+   "mv_km_mean": 2.87,
+   "mv_km_min": 1.04,
+   "mv_km_max": 9.0
+  },
+  "5": {
+   "n": 12,
+   "line_km_mean": 16.9,
+   "line_km_min": 6.2,
+   "line_km_max": 35.1,
+   "mv_km_mean": 3.61,
+   "mv_km_min": 1.55,
+   "mv_km_max": 8.26
+  }
+ },
+ "rank_line_km": [
+  "3",
+  "1",
+  "2",
+  "4",
+  "5"
+ ],
+ "rank_mv_km": [
+  "1",
+  "3",
+  "2",
+  "4",
+  "5"
+ ],
+ "spearman_PAI_vs_mv_mean_77": {
+  "rho": -0.474,
+  "p": 1.33e-05
+ },
+ "spearman_PAI_vs_line_mean_77": {
+  "rho": -0.21,
+  "p": 0.0672
+ },
+ "inputs": {
+  "province_inputs.csv_sha256": "b042492a0419d41d5eabb5ab41441fe5feba7bb492707e4e1fdabeaf1e0ffbe3"
+ },
+ "mv_lineage": {
+  "producer": "Scripts/mv_distance.py",
+  "qa_file": "Data/mv_distance/mv_distance_QA.json",
+  "qa_sha256": "3ff928dcbf4beb086358c1fb6e9966b71f675d6f9365fd4274d0550f8b09328d",
+  "source": "gridfinder_mv_lines_thailand.gpkg",
+  "source_sha256": "58ddd588c50c3c3e22b7962a3fcc96cf656e961202ed794ec58ff1a2516f0a27",
+  "crs": "EPSG:32647",
+  "res_m": 90.0,
+  "mask": "cell centre inside union of 77 GADM 4.1 level-1 polygons",
+  "aggregation": "province mean of valid 90 m cells (median descriptive only)"
+ }
+}

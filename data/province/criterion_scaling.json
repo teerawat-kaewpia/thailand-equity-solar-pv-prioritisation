@@ -1,0 +1,48 @@
+{
+ "amendment": "A5 2026-10-10",
+ "pixel_level": {
+  "C1_Resource": {
+   "formula": "normalize(PVOUT, 2nd-98th pctl)",
+   "normalization": "2nd-98th pctl: [1332.79, 1548.75] kWh/kWp/yr"
+  },
+  "C3_Demand": {
+   "formula": "normalize(pop_density, 2nd-98th pctl)",
+   "normalization": "2nd-98th pctl: [0.0405, 7.1916] persons/pixel"
+  },
+  "C2_Equity": "none (raw percent, province-constant raster)",
+  "C4_Infra": "formula score exp(-d/5 km) in [0,1]",
+  "C5_Physical": "formula score in [0,1]"
+ },
+ "province_level": {
+  "C1_Resource": {
+   "transform": "2nd-98th pct clip, linear [0,1]",
+   "times": 1,
+   "lo": 0.18485714846552936,
+   "hi": 0.966454021485711
+  },
+  "C2_Equity": {
+   "transform": "2nd-98th pct clip, linear [0,1]",
+   "times": 1,
+   "lo": 0.25365477014785753,
+   "hi": 22.930426004608755
+  },
+  "C3_Demand": {
+   "transform": "log1p(100x), then 2nd-98th pct clip, linear [0,1]",
+   "times": 1,
+   "lo": 1.4851020283299394,
+   "hi": 4.512548646782455
+  },
+  "C4_Infra": {
+   "transform": "2nd-98th pct clip, linear [0,1]",
+   "times": 1,
+   "lo": 0.04578557088067782,
+   "hi": 0.6525524360268736
+  },
+  "C5_Physical": {
+   "transform": "2nd-98th pct clip, linear [0,1]",
+   "times": 1,
+   "lo": 0.20873777836410934,
+   "hi": 0.990461633123147
+  }
+ }
+}
