@@ -1,0 +1,27 @@
+{
+  "upload_type": "software",
+  "title": "Equity-aware spatial prioritisation of distributed solar PV in Thailand: code and data",
+  "version": "1.0.4",
+  "creators": [
+    {
+      "name": "Saengsuwan, Thanapon",
+      "affiliation": "Chiang Rai Rajabhat University"
+    },
+    {
+      "name": "Kaewpia, Teerawat",
+      "affiliation": "Chiang Rai Rajabhat University"
+    }
+  ],
+  "description": "<p>Code and province-level data behind the manuscript &quot;Equity-aware spatial prioritisation of distributed solar PV in Thailand: Policy scenarios for electricity distribution planning&quot;, submitted to The Electricity Journal.</p><p>Code is released under the MIT License. Data, figures and documents are released under CC BY 4.0 (see LICENSE-DATA). Raw third-party inputs are not redistributed and keep their own licences (see DATA_SOURCES.md).</p>",
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "distributed solar PV",
+    "distribution planning",
+    "equity",
+    "entropy weight method",
+    "TOPSIS",
+    "allocation scenarios",
+    "Thailand"
+  ]
+}

@@ -1259,22 +1259,15 @@ spacer()
 # ══════════════════════════════════════════════════════════════════════════════
 # DECLARATIONS
 # ══════════════════════════════════════════════════════════════════════════════
-h1("Declaration of Generative AI and AI-assisted Technologies in the Manuscript Preparation Process")
+# text supplied by the authors, 2026-10-24 (replaces the earlier wording), heading as in the TEJ guide
+h1("Declaration of generative AI and AI-assisted technologies in the manuscript preparation process")
 para(
-    # Codex added 2026-10-23 (authors: review only)
-    "During the preparation of this work the authors used two large-language-model tools. "
-    "Claude (Anthropic), accessed through Claude Code, was used for four bounded purposes: "
-    "checking the language accuracy of manuscript text, writing and debugging the "
-    "data-processing and analysis code, generating figures from author-specified "
-    "specifications, and locating and reading potentially relevant sources, including policy "
-    "documents. Codex (OpenAI) was used only to review the manuscript, tables and figures for "
-    "consistency with the analysis outputs and the cited sources. The tools had no role in "
-    "the study's decision-making and did not generate or alter the source data. All research questions, study design, criteria and data choices, "
-    "analytical decisions, interpretation of results and substantive claims were conceived, "
-    "checked and validated by the authors, who verified all numerical outputs against the "
-    "analysis code, checked every citation against its source, reviewed and edited all "
-    "AI-assisted text and code, and take full responsibility for the content of the "
-    "publication.",
+    "During the preparation of this work the authors used Claude Opus 5.5 (Anthropic), through "
+    "Claude Code, in order to draft and revise text under the authors\u2019 direction, restructure "
+    "sections, check consistency between the manuscript, the Supplementary Material and the analysis "
+    "outputs, and edit the language, and OpenAI Codex (GPT-5.6 Terra, OpenAI) to revise the wording "
+    "of parts of the manuscript. After using these tools, the authors reviewed and edited the content "
+    "as needed and take full responsibility for the content of the published article.",
     indent=False,
 )
 
