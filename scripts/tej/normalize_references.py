@@ -89,9 +89,17 @@ ARTICLE_TITLE_SENTENCE_CASE = {
 GHSL_OLD = "Sentinel2 composite (2018). European Commission"
 GHSL_NEW = "Sentinel2 composite (2018), average net building height (ANBH) layer. European Commission"
 
+# Thai ภาคประชาชน means the general public (households), not the "public sector" (government), check 2026-10-24
+PUBLIC = [("rooftop solar projects for the public sector, residential type",
+           "rooftop solar projects for the general public, residential type"),
+          ("under the public-sector rooftop solar programme",
+           "under the rooftop solar programme for the general public")]
+
 changed = 0
 for i, s in enumerate(E):
     t = s
+    for a, b in PUBLIC:
+        t = t.replace(a, b)
     if GHSL_NEW not in t:
         t = t.replace(GHSL_OLD, GHSL_NEW)
     for a, full in FULL.items():
@@ -110,6 +118,7 @@ for i, s in enumerate(E):
 # checks: no abbreviation left, every DOI written as https://doi.org/, no entry carries two links,
 # no URL longer than 90 characters
 for s in E:
+    assert "public sector" not in s and "public-sector" not in s, s[:90]
     for a in FULL:
         assert f". {a}. " not in s, s[:80]
     assert "dx.doi.org" not in s and "doi:" not in s.lower(), s[:80]

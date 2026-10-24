@@ -1,5 +1,7 @@
 # D5: Policy source register
 
+> **Language note (2026-10-24):** official titles, dates and quoted clauses are given in Thai as they appear in the source documents, with an English title under each Thai title. Thai years are Buddhist Era: B.E. 2569 = 2026. Agency abbreviations: กกพ. = ERC, กพช. = NEPC, กฟภ. = PEA, กฟน. = MEA, สนพ. = EPPO.
+
 Rules (`D_SEARCH_PROTOCOL.md` + user, 2026-10-08):
 - Primary source required: the actual resolution, announcement or regulation from NEPC (กพช.), ERC (กกพ.), the Royal Gazette, EPPO, PEA, MEA, EGAT, DEDE or the ENCON Fund.
 - Secondary sources (news, consultancies, IEEFA) only point the way or give context. They never support a policy claim alone.
@@ -11,6 +13,7 @@ Rules (`D_SEARCH_PROTOCOL.md` + user, 2026-10-08):
 ## P1. Community solar farm regulation: **PRIMARY-VERIFIED**
 - **Issuer:** Energy Regulatory Commission (กกพ.)
 - **Title:** ระเบียบคณะกรรมการกำกับกิจการพลังงาน ว่าด้วยการจัดหาไฟฟ้าจากโครงการโซลาร์ฟาร์มชุมชน (Community-based Solar Power Generation Project) พ.ศ. 2569
+- **Title (English):** Regulation of the Energy Regulatory Commission on electricity procurement from the Community-based Solar Power Generation Project, B.E. 2569 (2026)
 - **Gazette:** ราชกิจจานุเบกษา เล่ม 143 ตอนพิเศษ 230 ง, 22 กันยายน 2569 (page header, p. 1)
 - **ERC page date:** 17 กันยายน 2569. ERC resolution: meeting 39/2569 (ครั้งที่ 1,029), 11 กันยายน 2569 (preamble).
 - **Effective:** the day after Gazette publication, i.e. 23 กันยายน 2569 (ข้อ 2).
@@ -29,6 +32,7 @@ Rules (`D_SEARCH_PROTOCOL.md` + user, 2026-10-08):
 
 ## P2. Residential rooftop solar, MEA implementing announcement: **PRIMARY-VERIFIED (MEA service area only)**
 - **Issuer:** การไฟฟ้านครหลวง (MEA). **Title:** ประกาศการไฟฟ้านครหลวง ที่ ๕๔/๒๕๖๙ (the number is handwritten and read as ๕๔; re-check against the original) เรื่อง การรับซื้อไฟฟ้าโครงการผลิตไฟฟ้าจากพลังงานแสงอาทิตย์ที่ติดตั้งบนหลังคา สำหรับภาคประชาชน ประเภทบ้านอยู่อาศัย พ.ศ. 2569
+- **Title (English):** MEA Announcement No. 54/2569 on electricity purchase from rooftop solar projects for the general public, residential type, B.E. 2569 (2026)
 - **Signed:** 29 มิถุนายน 2569 by นายดิชวัฒน์ จันทร์อี่, ผู้ว่าการ (p. 5). Applications open 1 กรกฎาคม 2569 (ข้อ 13).
 - **Basis cited (preamble):** ระเบียบ กกพ. ว่าด้วยการจัดหาไฟฟ้าโครงการผลิตไฟฟ้าจากพลังงานแสงอาทิตย์ที่ติดตั้งบนหลังคา สำหรับภาคประชาชน **พ.ศ. 2562**, and **ประกาศ กกพ. เรื่อง ประกาศเชิญชวนการรับซื้อไฟฟ้า… ประเภทบ้านอยู่อาศัย พ.ศ. 2569**, under NEPC-approved policy.
 - **Scope:** MEA customers, tariff type 1 (residential) only (ข้อ 1.1). The PEA counterpart announcement (for the 74 PEA provinces in our scenarios) is **not yet obtained**.
@@ -89,8 +93,9 @@ The user also supplied `ระเบียบ กกพ. ว่าด้วย�
 
 ## P8. Residential rooftop solar, PEA purchase announcement: **PRIMARY-VERIFIED (PEA service area: the scenario scope)**
 - **Issuer:** การไฟฟ้าส่วนภูมิภาค (PEA). **Title:** ประกาศการไฟฟ้าส่วนภูมิภาค เรื่อง รายละเอียดที่เกี่ยวข้องกับการรับซื้อไฟฟ้า โครงการผลิตไฟฟ้าจากพลังงานแสงอาทิตย์ที่ติดตั้งบนหลังคาสำหรับภาคประชาชน ประเภทบ้านอยู่อาศัย พ.ศ. 2569
+- **Title (English):** PEA Announcement on details of electricity purchase from rooftop solar projects for the general public, residential type, B.E. 2569 (2026)
 - **Signed:** 29 มิถุนายน 2569 (the day is handwritten and read as 29) by นายมงคล ตรีกิจจานนท์, ผู้ว่าการ (p. 3). **Effective:** from the date of announcement (ข้อ 2). **Authority:** มาตรา 29 พ.ร.บ.การไฟฟ้าส่วนภูมิภาค พ.ศ. 2503.
-- **Basis (preamble):** มติ กพช. **1/2569 (ครั้งที่ 175), 29 เมษายน 2569**; ระเบียบ กกพ. (rooftop, public sector) พ.ศ. 2562; ประกาศ กกพ. เชิญชวน… ประเภทบ้านอยู่อาศัย พ.ศ. 2569.
+- **Basis (preamble):** มติ กพช. **1/2569 (ครั้งที่ 175), 29 เมษายน 2569**; ระเบียบ กกพ. (rooftop, general public) พ.ศ. 2562; ประกาศ กกพ. เชิญชวน… ประเภทบ้านอยู่อาศัย พ.ศ. 2569.
 - **Scope:** PEA tariff-type-1 residential customers (ข้อ 3).
 - **Process:**
   - Applications go through the PEA **PPIM** system (https://ppim.pea.co.th) from **1 กรกฎาคม 2569** until the target is met (ข้อ 5.2).
@@ -103,6 +108,7 @@ The user also supplied `ระเบียบ กกพ. ว่าด้วย�
 
 ## P9. PEA grid-connection requirements for the 2569 residential solar programme: **PRIMARY-VERIFIED. Key evidence for the utility verification gate**
 - **Issuer:** PEA. **Title:** ประกาศการไฟฟ้าส่วนภูมิภาค เรื่อง ข้อกำหนดการเชื่อมต่อระบบโครงข่ายไฟฟ้าสำหรับผู้ผลิตไฟฟ้าโครงการโซลาร์ภาคประชาชน พ.ศ. 2569
+- **Title (English):** PEA Announcement on grid-connection requirements for generators under the rooftop solar programme for the general public, B.E. 2569 (2026)
 - **Signed:** 26 มิถุนายน 2569 by นายมงคล ตรีกิจจานนท์, ผู้ว่าการ (p. 2). **Effective:** from the date of announcement (ข้อ 2). **Authority:** มาตรา 31 วรรค 2 พ.ร.บ.การไฟฟ้าส่วนภูมิภาค พ.ศ. 2503.
 - **Preamble (programme terms stated by PEA, citing NEPC 1/2569 of 29 เม.ย. 2569):**
   - Target ≤ **500 MW**, **Net Billing**, ≤ **5 kW** per meter.
@@ -118,6 +124,7 @@ The user also supplied `ระเบียบ กกพ. ว่าด้วย�
 
 ## P10. PEA grid-use regulation 2559: **PRIMARY-VERIFIED (legal basis only so far)**
 - **Issuer:** PEA. **Title:** ระเบียบการไฟฟ้าส่วนภูมิภาค ว่าด้วยข้อกำหนดการใช้บริการระบบโครงข่ายไฟฟ้า พ.ศ. 2559. It replaces the 2551 regulation and is effective on issue (p. 2).
+- **Title (English):** PEA Regulation on requirements for the use of the electricity network service, B.E. 2559 (2016)
 - **Legal basis (p. 2):** **พ.ร.บ.การประกอบกิจการพลังงาน พ.ศ. 2550 มาตรา 81**: a licensee with an energy network must allow other licensees or operators to use or connect to it, under requirements the network licensee announces. Issued under มาตรา 31(2) พ.ร.บ.การไฟฟ้าส่วนภูมิภาค พ.ศ. 2503.
 - Use for GOV: PEA is the party that sets and applies the distribution grid code in its area, and P9 amends the companion connection regulation (2559). The body (34 pp.) has a text layer with broken Thai vowels and has not been read clause by clause.
 - File: `Data\policy_sources\01-ระเบียบ กฟภ. ว่าด้วยข้อกำหนดการใช้บริการระบบโครงข่ายไฟฟ้า พ.ศ. 2559.pdf`, supplied by the user on 2026-10-08. SHA-256 7764e2627d0553c1420cd42448c8707f4f2bad30c910a8d5820d757f33932bcf. URL not recorded.
@@ -125,6 +132,7 @@ The user also supplied `ระเบียบ กกพ. ว่าด้วย�
 
 ## P7. ERC Ft publication, Sep–Dec 2569: **PRIMARY-VERIFIED (context for the tariff instrument; NOT a source for P3)**
 - **Issuer:** ERC. **Title:** เอกสารเผยแพร่ เรื่อง ค่าไฟฟ้าตามสูตรการปรับอัตราค่าไฟฟ้าโดยอัตโนมัติ (Ft) สำหรับงวดเดือนกันยายน – ธันวาคม 2569. ERC meeting 27/2569 (ครั้งที่ 1,017), 8 กรกฎาคม 2569 (p. 1).
+- **Title (English):** ERC public information document on the automatic tariff adjustment (Ft) for September to December 2569 (2026)
 - **What it supports:**
   - It refers to the residential **progressive rate adopted by NEPC on 15 กรกฎาคม 2569** (= NEPC 2/2569, ครั้งที่ 176 per P1).
   - It is applied **from the September 2569 bill onward**, with the average retail rate expected to fall from 3.95 to about 3.86 THB/kWh (pp. 20–22).
@@ -135,6 +143,7 @@ The user also supplied `ระเบียบ กกพ. ว่าด้วย�
 
 ## P6. Residential progressive tariff (NEPC 1/2569 follow-up): PRIMARY-VERIFIED (consultation document, not a final tariff)
 - **Issuer:** ERC. **Title:** เอกสารการรับฟังความคิดเห็น เรื่อง ข้อเสนอการปรับปรุงอัตราค่าไฟฟ้าประเภทบ้านอยู่อาศัย แบบอัตราก้าวหน้า (Progressive rate) ตามมติ กพช. เมื่อวันที่ 29 เมษายน 2569 ของ กฟน. และ กฟภ. ERC meetings 18/2569 (14 พ.ค. 2569) and 19/2569 (20 พ.ค. 2569).
+- **Title (English):** ERC consultation document on the proposed progressive residential tariff of MEA and PEA, following the NEPC resolution of 29 April 2569 (2026)
 - **Confirms from a primary source:** NEPC meeting **1/2569 (ครั้งที่ 175), 29 เมษายน 2569**. ThaiPublica's "ครั้งที่ 176" is wrong. 176 is meeting 2/2569 per P1. The resolution covers a progressive residential tariff for the first 200 units, and ERC, MEA and PEA were tasked to finish by June 2569 (item 1.3.2). Legal mechanism: Energy Industry Act ss. 64, 65 and 67 (item 1.1).
 - It does NOT contain the rooftop net-billing terms. Those still need P2's own primary source.
 - URL: https://www.erc.or.th/web-upload/200xf869baf82be74c18cc110e974eea8d5c/202605/m_publichearing/8776/596/file_download/8550fc135fe068ed8e7ed7cf1eb760d2.pdf (accessed 2026-10-08). Saved as `Data\policy_sources\ERC_hearing_progressive_tariff_2569.pdf`.

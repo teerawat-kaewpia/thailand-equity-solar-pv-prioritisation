@@ -90,14 +90,53 @@ with open(BASE / "Figures" / "FIGURES_MANIFEST.csv", encoding="utf-8") as fh:
                      "analysis_stage": "figure", "source_licence": "CC BY 4.0 (this study)" + MAPNOTE.get(f["key"], ""), "sha256": f["sha256"],
                      "where_documented": "Figures/FIGURES_MANIFEST.csv"})
 
+# check 2026-10-24: reference numbers as printed in the manuscript (SOURCE_LINKS converts them), an English
+# title next to each Thai file name, and the current number of the zone-to-policy table (was "Table 15")
+from _floats import resolve_text
 with open(BASE / "Data" / "policy_sources" / "SOURCE_LINKS.csv", encoding="utf-8-sig") as fh:
     for p in csv.DictReader(fh):
-        rows.append({"id": p["policy_id"], "category": "policy document", "item": p["file"],
-                     "role_in_study": f"cited as reference [{p['manuscript_ref']}]", "version_or_scale": "",
+        rows.append({"id": p["policy_id"], "category": "policy document",
+                     "item": f"{p['title_en']} (file: {p['file']})",
+                     "role_in_study": (f"cited as reference [{p['manuscript_ref']}]" if p["manuscript_ref"]
+                                       else "not in the reference list, policy register only (Supplementary S11)"),
+                     "version_or_scale": "",
                      "date": f"downloaded {p['download_date']}", "source_or_route": p["url"],
-                     "used_for": "zone-to-policy screen (Table 15, Supplementary S11)", "analysis_stage": "policy screen (not part of the PAI)",
+                     "used_for": resolve_text("zone-to-policy screen (Table {T:policy}, Supplementary S11)"),
+                     "analysis_stage": "policy screen (not part of the PAI)",
                      "source_licence": f"Agency terms ({p['issuer']})", "sha256": p["sha256"],
                      "where_documented": "Data/policy_sources/SOURCE_LINKS.csv, Docs/D5_POLICY_REGISTER.md"})
+
+# Agency web pages cited in the manuscript (check 2026-10-24: the P13 row had been added to the CSV by hand and
+# was lost on regeneration, so the pages are generated here). Numbers are printed reference numbers.
+import json as _json
+import re as _re
+import docx as _docx
+_rn = {int(k): v for k, v in _json.loads((BASE / "Data" / "qa" / "ref_renumber.json").read_text(encoding="utf-8")).items()}
+_refs = _json.loads((BASE / "Data" / "references.json").read_text(encoding="utf-8"))["entries"]
+_ps = [q.text for q in _docx.Document(str(BASE / "Manuscript" / "DER_TEJ_Manuscript.docx")).paragraphs if q.text.strip()]
+_k = max(i for i, t in enumerate(_ps) if t == "References")
+_printed = {int(_re.match(r"\[(\d+)\]", t).group(1)): t for t in _ps[_k + 1:]}
+WEB = [("P13", "EPPO opens public consultation on the draft Power Development Plan 2026 to 2050 (PDP2026)", "EPPO opens public consultation",
+        "accessed 2026-10-16", "draft plan, planning context only (Sections 1 and 5.5)", "policy background"),
+       ("P12", "MEA, Authority [web page]: the MEA service area (Bangkok, Nonthaburi, Samut Prakan)", "Authority [web page]",
+        "accessed 2026-10-08", "service areas of MEA and PEA (Section 3.1)", "study region"),
+       ("P14", "PEA, Business and services of PEA [web page]: the PEA service area (74 provinces)", "Business and services of PEA",
+        "accessed 2026-10-09", "service areas of MEA and PEA (Section 3.1), scenario analysis set", "study region")]
+for pid, item, key, acc, use, stage in WEB:
+    raw = next(i for i, s in enumerate(_refs, 1) if key in s)
+    num = _rn[raw]
+    assert key in _printed[num], (pid, num)
+    url = _re.search(r"https?://\S+", _refs[raw - 1]).group(0).rstrip(".")
+    if pid == "P13":   # the full item URL, the reference prints its decoded form
+        url = ("https://www.eppo.go.th/information-services/advertise/news-eppo/%E0%B8%AA%E0%B8%99%E0%B8%9E-"
+               "%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9F%E0%B8%B1%E0%B8%87"
+               "%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B9%80-4/")
+    rows.append({"id": pid, "category": "policy web page", "item": item, "role_in_study": f"cited as reference [{num}]",
+                 "version_or_scale": "", "date": acc, "source_or_route": url, "used_for": use,
+                 "analysis_stage": stage, "source_licence": "Agency web page", "sha256": "",
+                 # P12 and P13 have D5 register entries, the PEA page (P14, new ID) has none
+                 "where_documented": ("Docs/D5_POLICY_REGISTER.md" if pid in ("P12", "P13")
+                                      else "manuscript reference list (no D5 register entry)")})
 
 assert not any("{T:" in v or "{F:" in v for r in rows for v in r.values()), "unresolved float token"
 out = BASE / "Docs" / "PROVENANCE.csv"

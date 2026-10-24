@@ -53,14 +53,47 @@ ROWS = [
      "Chrome download history, generated in-page (blob URL), so the page is the only stable link, context only"),
 ]
 
+# English titles of the Thai documents (check 2026-10-24: Thai file names alone are not readable for most
+# users). Cited documents follow the wording of the reference list.
+TITLE_EN = {
+    "P2a": "ERC announcement inviting electricity purchase from rooftop solar projects for the general public, residential type, B.E. 2569 (2026)",
+    "P1": "ERC regulation on electricity procurement from the Community-based Solar Power Generation Project, B.E. 2569 (2026)",
+    "P9": "PEA announcement on grid-connection requirements for generators under the rooftop solar programme for the general public, B.E. 2569 (2026)",
+    "P4": "Energy Conservation Promotion Act B.E. 2535 (1992) and its amendment (No. 2) B.E. 2550 (2007)",
+    "P7": "ERC public information document on the automatic tariff adjustment (Ft), September to December 2569 (2026)",
+    "P2": "MEA announcement on electricity purchase from rooftop solar for the general public, residential type, B.E. 2569 (2026)",
+    "P8": "PEA announcement on details of electricity purchase from rooftop solar for the general public, residential type, B.E. 2569 (2026)",
+    "P10": "PEA regulation on requirements for the use of the electricity network service, B.E. 2559 (2016)",
+    "P6": "ERC consultation document on the proposed progressive residential tariff of MEA and PEA (NEPC resolution of 29 April 2026)",
+    "P11": "EPPO summary: Community-based Solar Power Generation Project (EPPO resolution page, context only)",
+}
+assert {r[0] for r in ROWS} <= set(TITLE_EN)
+
+# ROWS hold the index of each entry in Data/references.json. The manuscript prints references renumbered by
+# first citation (check 2026-10-24: this table had carried the internal index, e.g. [49] for printed [10]).
+import json
+import re
+_rn = {int(k): v for k, v in json.loads((BASE / "Data" / "qa" / "ref_renumber.json").read_text(encoding="utf-8")).items()}
+_ms = __import__("docx").Document(str(BASE / "Manuscript" / "DER_TEJ_Manuscript.docx"))
+_paras = [q.text for q in _ms.paragraphs if q.text.strip()]
+_i = max(k for k, t in enumerate(_paras) if t == "References")
+PRINTED = {int(re.match(r"\[(\d+)\]", t).group(1)): t for t in _paras[_i + 1:]}
+ISSUER_WORD = {"ERC": "Energy Regulatory Commission", "PEA": "Provincial Electricity Authority",
+               "Royal Thai Government": "Energy Conservation Promotion Act"}
+
 out = out_path("Data", "policy_sources", "SOURCE_LINKS.csv")
 with open(out, "w", encoding="utf-8-sig", newline="") as fh:
     w = csv.writer(fh)
-    w.writerow(["policy_id", "manuscript_ref", "file", "sha256", "issuer", "url", "download_date", "note"])
+    w.writerow(["policy_id", "manuscript_ref", "file", "title_en", "sha256", "issuer", "url", "download_date", "note"])
     for pid, ref, name, issuer, url, date, note in ROWS:
         p = SRC_DIR / name
         assert p.exists(), name
-        w.writerow([pid, ref, name, hashlib.sha256(p.read_bytes()).hexdigest(), issuer, url, date, note])
+        printed = ""
+        if ref:
+            printed = str(_rn[int(ref)])
+            assert ISSUER_WORD[issuer] in PRINTED[int(printed)], (pid, printed, PRINTED[int(printed)][:80])
+        w.writerow([pid, printed, name, TITLE_EN[pid], hashlib.sha256(p.read_bytes()).hexdigest(), issuer, url,
+                    date, note])
 
 listed = {r[2] for r in ROWS}
 unlisted = [p.name for p in SRC_DIR.glob("*.pdf") if p.name not in listed]

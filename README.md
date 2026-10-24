@@ -13,14 +13,28 @@ Journal). Authors: Thanapon Saengsuwan and Teerawat Kaewpia, Chiang Rai Rajabhat
 | `data/province/` | Province-level outputs of the final run (Run 4), 77 provinces |
 | `data/master_results.json` | Every headline statistic quoted in the manuscript |
 | `data/tej/` | Scenario inputs and results (S1 to S3), zone distances, modelled MV distances, policy instrument screen, corrected C2 table and audit, ERP diagnostic, cell-area check |
-| `data/indices/` | The two author-built composite indices (provincial and Bangkok district): per-unit scores, workbook and methodology (in Thai) |
+| `data/indices/` | The two author-built composite indices (provincial and Bangkok district): per-unit scores, workbook and methodology (in Thai), with an English guide in `README_EN.md` |
 | `data/bangkok/` | Bangkok district analysis of Supplementary Section S12 (district criteria, vulnerability index and PAI) |
 | `figures/` | `main/` Fig. 1 to 6, `supplementary/` Fig. S12 and S13a to S13f, `submission/` journal files, `FIGURES_MANIFEST.csv` |
-| `docs/` | Pre-registered scenario protocol with dated amendments A1 to A5, its hash lock, and the run log |
+| `docs/` | Pre-registered scenario protocol with dated amendments A1 to A5, its hash lock, the run log, the official-data search protocol (Thai original and English translation) and the policy source register |
 
 `MANIFEST.csv` lists every file with its size and sha256. `PROVENANCE.csv` lists every dataset, map and
 figure, and policy document the study uses, with version, date, source, the analysis stage it serves and
 the licence of the source. `DATA_SOURCES.md` repeats the dataset part as printed in Table S10.
+
+## Thai-language content
+
+Some content is in Thai because the sources are Thai. It is kept as it is and explained in English:
+
+- Province and district names in Thai are join keys in the data files. English names are in the same files
+  (`NAME_1`, `NAME_2`) or in the crosswalks of `data/indices/README_EN.md`.
+- The two index methodology files in `data/indices/` are in Thai. `data/indices/README_EN.md` summarises
+  them in English, explains every column and Thai value, and gives the Thai to English name crosswalks.
+- `docs/D_SEARCH_PROTOCOL.md` is the Thai original of the search protocol, fixed before the search.
+  `docs/D_SEARCH_PROTOCOL_EN.md` is its English translation.
+- Policy documents have Thai file names and titles. `data/tej/policy_sources/SOURCE_LINKS.csv` and
+  `PROVENANCE.csv` give an English title for each, and `docs/D5_POLICY_REGISTER.md` gives the English
+  title under each Thai title. Reference numbers in these files are the numbers printed in the manuscript.
 
 ## Final results
 

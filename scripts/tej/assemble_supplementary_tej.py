@@ -454,9 +454,13 @@ s8a = pd.DataFrame({
 table(s8a, col_widths=[2.5, 6.4, 2.6, 1.6], font_size=8.5, index_col=True)
 para("Provincial vulnerability index FV (reference period 2566–2567). The overall "
      "resilience score is SER = 0.50·EC + 0.50·(100 − FV). This paper compares against FV "
-     "and the overall resilience score in Table {T:construct}. Source for all inputs: official "
-     "NESDC/NSO provincial statistics (gross provincial product, household income and "
-     "expenditure, debt, employment), reference year 2566.")
+     "and the overall resilience score in Table {T:construct}. All inputs are official statistics "
+     "(check against the index methodology, 2026-10-24): household income, expenditure and debt and "
+     "the estimated poor headcount (NSO and NESDC, 2566), gross provincial product per capita "
+     "(NESDC, 2567), Section 33 insured persons and registered establishments (Social Security "
+     "Office, 2567), newly registered juristic persons and their capital (Department of Business "
+     "Development, 2567) and registered population (Department of Provincial Administration, "
+     "2566 and 2567). FV uses the 2566 household items and the 2566–2567 population change.")
 caption("Table {T:S-index-b}. Components of the provincial vulnerability sub-index FV (each raw "
         "value percentile-ranked 0–100 within the 77 provinces, higher = more "
         "vulnerable).")
@@ -543,7 +547,7 @@ s10 = pd.DataFrame([
     {"Role": "Solar deployment comparison", "Dataset and provider": "OpenStreetMap solar power plants", "Version / native scale": "Point and polygon vector features", "Period / access": "OSM database state 2026-06-22 (Overpass timestamp)", "Use and processing": "Overpass query for power=plant and plant:source=solar, used only for descriptive deployment comparison.", "Access route / script": "openstreetmap.org, Overpass API"},
     {"Role": "Bangkok rooftop yield", "Dataset and provider": "Google Open Buildings footprint coverage", "Version / native scale": "v3 polygons (Earth Engine asset GOOGLE/Research/open-buildings/v3/polygons)", "Period / access": "Exported raster dated 2026-07-11 (GoogleOB_v3_density_30m_Bangkok.tif)", "Use and processing": "Footprint coverage rasterised and aggregated to the 50 khet, used for the district rooftop opportunity measure.", "Access route / script": "developers.google.com/open-buildings, Scripts/GEE/run_bangkok_density_export.py"},
     {"Role": "Bangkok district equity", "Dataset and provider": "Bangkok Metropolitan Administration district administrative statistics", "Version / native scale": "District statistics, 50 khet", "Period / access": "Base year 2024", "Use and processing": "Author-built vulnerability index from slum share, crowding, green deficit and disaster indicators, full construction in Section S8.", "Access route / script": "BMA administrative statistics, supplementary Section S8"},
-    {"Role": "Provincial construct check", "Dataset and provider": "Author-built Thailand Provincial Socioeconomic and Financial Resilience Index (vulnerability FV and overall score SER) from NESDC/NSO provincial statistics", "Version / native scale": "v1.0 weighted baseline model, 77 provinces (Thailand_Provincial_Index_2566_2567_GIS_v1.csv)", "Period / access": "Reference period 2566–2567 (2023–2024), files dated 2026-07-12", "Use and processing": "External comparison only (Table {T:construct}), full construction in Section S8. It does not enter the PAI.", "Access route / script": "Supplementary Section S8, Scripts/06_Priority_Areas/validate_ser_external.py"},
+    {"Role": "Provincial construct check", "Dataset and provider": "Author-built Thailand Provincial Socioeconomic and Financial Resilience Index (vulnerability FV and overall score SER) from official provincial statistics (NESDC, NSO, Social Security Office, Department of Business Development, Department of Provincial Administration)", "Version / native scale": "v1.0 weighted baseline model, 77 provinces (Thailand_Provincial_Index_2566_2567_GIS_v1.csv)", "Period / access": "Reference period 2566–2567 (2023–2024), files dated 2026-07-12", "Use and processing": "External comparison only (Table {T:construct}), full construction in Section S8. It does not enter the PAI.", "Access route / script": "Supplementary Section S8, Scripts/06_Priority_Areas/validate_ser_external.py"},
     {"Role": "Map base layer (main-text Fig. {F:study-region} only)", "Dataset and provider": "Natural Earth Admin 0 countries", "Version / native scale": "v5.1.1, 1:10m vector", "Period / access": "Downloaded 2026-06-15", "Use and processing": "Neighbouring countries drawn as context in the study-region map. No analytical use.", "Access route / script": "naturalearthdata.com, DER_TEJ/Scripts/figures/fig02_study_area_tej.py"},
     {"Role": "LV-density sensitivity only", "Dataset and provider": "GridFinder modelled low-voltage density (Arderne et al.)", "Version / native scale": "gridfinder_lv_thailand.tif, 250 m raster (ESRI:54009)", "Period / access": "Used for the Table {T:S-lv} sensitivity", "Use and processing": "Normalised to [0,1] (2nd-98th percentile of non-zero cells) on the 90 m grid, province mean replaces C4 only in Table {T:S-lv}. Not a distance and not an MV layer.", "Access route / script": "GridFinder, Scripts/02_Preprocessing/compute_c5_grid_access_90m.py"},
     {"Role": "Modelled MV distance (TEJ screen)", "Dataset and provider": "GridFinder modelled medium-voltage lines (Arderne et al.)", "Version / native scale": "gridfinder_mv_lines_thailand.gpkg, 36,027 line features", "Period / access": "Clipped 2026-06-23", "Use and processing": "Euclidean distance from 90 m cells (EPSG:32647, cell centre inside the GADM 4.1 province union) to the nearest modelled MV line, province mean. A modelled network, not the utility network.", "Access route / script": "DER_TEJ/Scripts/mv_distance.py"},
@@ -570,6 +574,8 @@ _s11 = _s11.replace({r";\s*": ", "}, regex=True)  # no semicolons in rendered ce
 caption("Table {T:S-policy-full}. Zone-to-policy screen, full version. Citation IDs refer to Table {T:S-policy-docs}.")
 table(_s11, col_widths=[0.9, 2.6, 2.4, 2.6, 2.6, 3.1, 1.7], font_size=6.5)
 _src = pd.read_json(BASE / "Data" / "policy" / "source_index.json")
+# Thai ภาคประชาชน = the general public (households), not the government "public sector" (check 2026-10-24)
+assert not _src.astype(str).apply(lambda c: c.str.contains("public.sector", case=False, regex=True)).any().any()
 caption("Table {T:S-policy-docs}. Primary documents used for the zone-to-policy screen.")
 table(_src, col_widths=[0.9, 1.3, 5.2, 3.0, 2.6, 2.9], font_size=6.5)
 
