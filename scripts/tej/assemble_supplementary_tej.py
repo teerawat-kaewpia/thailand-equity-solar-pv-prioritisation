@@ -547,7 +547,7 @@ s10 = pd.DataFrame([
     {"Role": "Map base layer (main-text Fig. {F:study-region} only)", "Dataset and provider": "Natural Earth Admin 0 countries", "Version / native scale": "v5.1.1, 1:10m vector", "Period / access": "Downloaded 2026-06-15", "Use and processing": "Neighbouring countries drawn as context in the study-region map. No analytical use.", "Access route / script": "naturalearthdata.com, DER_TEJ/Scripts/figures/fig02_study_area_tej.py"},
     {"Role": "LV-density sensitivity only", "Dataset and provider": "GridFinder modelled low-voltage density (Arderne et al.)", "Version / native scale": "gridfinder_lv_thailand.tif, 250 m raster (ESRI:54009)", "Period / access": "Used for the Table {T:S-lv} sensitivity", "Use and processing": "Normalised to [0,1] (2nd-98th percentile of non-zero cells) on the 90 m grid, province mean replaces C4 only in Table {T:S-lv}. Not a distance and not an MV layer.", "Access route / script": "GridFinder, Scripts/02_Preprocessing/compute_c5_grid_access_90m.py"},
     {"Role": "Modelled MV distance (TEJ screen)", "Dataset and provider": "GridFinder modelled medium-voltage lines (Arderne et al.)", "Version / native scale": "gridfinder_mv_lines_thailand.gpkg, 36,027 line features", "Period / access": "Clipped 2026-06-23", "Use and processing": "Euclidean distance from 90 m cells (EPSG:32647, cell centre inside the GADM 4.1 province union) to the nearest modelled MV line, province mean. A modelled network, not the utility network.", "Access route / script": "DER_TEJ/Scripts/mv_distance.py"},
-    {"Role": "Phase 1 screen, excluded", "Dataset and provider": "VIIRS DNB annual night-time radiance, Thailand TGO grid emission factor", "Version / native scale": "2022 annual composite, raster", "Period / access": "2022", "Use and processing": "Exploratory energy-related proxy, excluded because it overlaps with C3 demand density. It does not enter the PAI. Post hoc diagnostic in Section S13.11.", "Access route / script": "Earth Engine VIIRS catalog, TGO EFEC 2022, preprocessing records"},
+    {"Role": "Step 1 screen, excluded", "Dataset and provider": "VIIRS DNB annual night-time radiance, Thailand TGO grid emission factor", "Version / native scale": "2022 annual composite, raster", "Period / access": "2022", "Use and processing": "Exploratory energy-related proxy, excluded because it overlaps with C3 demand density. It does not enter the PAI. Post hoc diagnostic in Section S13.11.", "Access route / script": "Earth Engine VIIRS catalog, TGO EFEC 2022, preprocessing records"},
 ])
 table(s10, col_widths=[1.35, 2.85, 1.85, 1.55, 4.30, 4.00], font_size=7.0, index_col=True)
 
@@ -587,8 +587,8 @@ head("S12.1 Methods: Bangkok's 50 khet", size_pt=12)
 para(
     "The same framework was re-applied within a single "
     "metropolitan area, the 50 districts (khet) of the Bangkok Metropolitan Administration "
-    "(BMA, GADM level-2 boundaries). The screening-through-autocorrelation pipeline (Phases "
-    "1–6) was reproduced. The qualitative cost/grid screen (Phase 7) and the "
+    "(BMA, GADM level-2 boundaries). Steps 1 to 4 of the workflow (main-text Fig. {F:framework}) were "
+    "reproduced. The decision comparison of Step 5 and the "
     "installation-based deployment comparisons were not repeated, as comparable district-level "
     "records were unavailable. Applying the framework at this scale required two "
     "adaptations of the criterion set, each of which is itself an informative result about "
@@ -893,7 +893,9 @@ para(
     "across all m spatial units, for each criterion j [15,35]:"
 )
 eq("p_{ij} = r_{ij} / Σ_i r_{ij}      (2)")
-eq("e_j = -(1/ln m) · Σ_i (p_{ij} · ln p_{ij}),   [p_{ij} ln p_{ij} = 0 when p_{ij} = 0]      (3)")
+# review 2026-10-24: the zero convention is stated in the text, not run into the display equation
+eq("e_j = -(1/ln m) · Σ_i (p_{ij} · ln p_{ij})      (3)")
+para("The convention ⟪plnp-zero⟫ is used when ⟪pij-zero⟫.")
 eq("d_j = 1 - e_j      (4)")
 eq("w_j = d_j / Σ_j d_j,   Σ_j w_j = 1      (5)")
 para(
@@ -916,10 +918,11 @@ para(
     "normalised scale the ideal and nadir are ⟪r-plus⟫ and ⟪r-minus⟫ for every criterion, "
     "since normalisation maps each criterion onto [0, 1]. On the WEIGHTED scale entering "
     "the distance calculation they become ⟪v-plus⟫ and ⟪v-minus⟫. Table {T:bounds} reports both: "
-    "the columns headed A⁺ and A⁻ are the unweighted ideals (1 and 0), and the adjacent "
-    "columns give the corresponding weighted values ⟪w-j⟫ and 0. Main-text Fig. {F:framework} shows the "
-    "unweighted form A⁺ = [1] for compactness. The two are equivalent "
-    "statements of the same bound."
+    # 2026-10-24: Fig. 1 no longer carries equations, and the table has one weight column (no
+    # separate weighted-ideal columns), so the sentence describes the table as it is
+    "the columns headed A⁺ and A⁻ are the unweighted ideals (1 and 0), and the column headed w "
+    "gives the weighted ideal ⟪w-j⟫, with a weighted nadir of 0 for every criterion. The two "
+    "are equivalent statements of the same bound."
 )
 para(
     "Using the theoretical rather than the observed maximum is deliberate: a criterion "
@@ -962,7 +965,12 @@ para(
 )
 eq("I = (n / S_0) · (Σ_i Σ_j w_{ij} z_i z_j) / (Σ_i z_i^2)      (11)")
 para(
-    "where ⟪n⟫ is the number of units, ⟪z-def⟫, ⟪w-ij⟫ are spatial weights, and ⟪S0-def⟫. "
+    # review 2026-10-24: the double sum is a display equation, not inline (it broke the line spacing)
+    "where ⟪n⟫ is the number of units, ⟪z-def⟫, ⟪w-ij⟫ are spatial weights, and ⟪S0⟫ is the sum "
+    "of all spatial weights:"
+)
+eq("S_0 = Σ_i Σ_j w_{ij}      (12)")
+para(
     "A sensitivity analysis is then conducted under an equal-weight scenario and an "
     "expert-elicited scenario, with Spearman's ρ, Kendall's τ, and maximum rank "
     "displacement used to evaluate ranking stability."
@@ -1079,7 +1087,7 @@ para(
 )
 para(
     f"Multicollinearity was checked on the normalised province-level design matrix. Six "
-    f"candidate criteria entered Phase 1 screening. Exactly one, Emission Reduction "
+    f"candidate criteria entered the screening of Step 1 (main-text Fig. {{F:framework}}). Exactly one, Emission Reduction "
     f"Potential (ERP), was excluded, because it substantially overlapped with C3 Demand "
     f"Density (Spearman ρ = {ERPD['rho_erp_c3']:.3f}, main text Section 3.2). A VIF of 24.98 "
     f"reported for ERP in an earlier version could not be reproduced after the C2 correction "

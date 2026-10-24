@@ -47,7 +47,7 @@ STAGE = [  # (pattern in the S10 role, analysis stage)
     (r"^Bangkok", "Bangkok district PAI (Supplementary S12)"), (r"Modelled MV", "allocation scenarios, MV-proximity classes"),
     (r"Solar deployment", "deployment comparison (Fig. 6)"), (r"construct check", f"construct check (Table {SUPP_T['construct']})"),
     (r"Map base layer", "map context only (Fig. 2)"), (r"LV-density", "sensitivity only (Table S9)"),
-    (r"Phase 1 screen", "excluded at screening (post hoc diagnostic, Section S13.11)"),
+    (r"Step 1 screen","excluded at screening (post hoc diagnostic, Section S13.11)"),
 ]
 # maps carry third-party layers whose terms are not replaced by this study's CC BY 4.0
 MAPNOTE = {k: "; boundaries GADM 4.1 under GADM terms" for k in ("study-region", "criteria-maps", "pai-map", "zones", "S-district", "lisa")}

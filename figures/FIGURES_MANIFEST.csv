@@ -1,5 +1,5 @@
 document,label,key,file,tiff_1000dpi,tiff_pixels,vector,submission_files,script,sha256,embedded_in_docx
-manuscript,Fig. 1,framework,main/Fig1_Framework.png,main/Fig1_Framework.tif,11000x16000,main/Fig1_Framework.pdf,submission/Figure_1.pdf submission/Figure_1.tif,Scripts/figures/fig01_framework_tej.py,e69d2ef37ef848628b7e4b253a55629f5ce4c12984a687c6f66c0134dcbc8e9a,yes
+manuscript,Fig. 1,framework,main/Fig1_Framework.png,main/Fig1_Framework.tif,6259x2557,main/Fig1_Framework.pdf,submission/Figure_1.pdf submission/Figure_1.tif,Scripts/figures/fig01_framework_tej.py,4103e2b2e3a2cd004590dbd866e224d53323545ec710d9b61ba0f2b0b6851ed2,yes
 manuscript,Fig. 2,study-region,main/Fig2_Study_Area.png,main/Fig2_Study_Area.tif,5395x8895,,submission/Figure_2.tif,Scripts/figures/fig02_study_area_tej.py,d6a8a5903d6ee455fe0fe08be649968d8ed49a71fbff47df92093f331acf494d,yes
 manuscript,Fig. 3,criteria-maps,main/Fig3_Criteria_Maps.png,main/Fig3_Criteria_Maps.tif,16322x6320,,submission/Figure_3.tif,Scripts/figures/fig03_input_layers_tej.py,94d90e52c91a0217db845fca4f050bdbe7f5e8de349ac1da05d218af5e006ad4,yes
 manuscript,Fig. 4,pai-map,main/Fig4_PAI_Map.png,main/Fig4_PAI_Map.tif,5505x8395,,submission/Figure_4.tif,Scripts/figures/fig06_07_pai_zone_maps_tej.py,6a1977ab38187d7490c0062a3cdc2d9346fe744da7ce2e326b42126f4a851755,yes

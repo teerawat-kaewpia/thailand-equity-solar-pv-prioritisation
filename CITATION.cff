@@ -12,6 +12,6 @@ repository-code: https://github.com/teerawat-kaewpia/thailand-equity-solar-pv-pr
 license:
   - MIT
   - CC-BY-4.0
-version: 1.0.1
+version: 1.0.2
 date-released: 2026-10-24
 # doi: to be added after the Zenodo release

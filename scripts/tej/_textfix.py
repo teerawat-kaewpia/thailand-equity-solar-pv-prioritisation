@@ -82,6 +82,10 @@ INLINE = {
                  '<mover><mi>PAI</mi><mo>&#x00AF;</mo></mover>'),
     "w-ij": sub(mi("w"), ij()),
     "S0-def": row(sub(mi("S"), mn("0")), mo("="), sigma("i"), sigma("j"), sub(mi("w"), ij())),
+    # review 2026-10-24: the entropy convention moved out of display Eq. (S13.3) into the text
+    "plnp-zero": row(sub(mi("p"), ij()), mi("ln"), mo("&#x2061;"), sub(mi("p"), ij()), mo("="), mn("0")),
+    "pij-zero": row(sub(mi("p"), ij()), mo("="), mn("0")),
+    "S0": sub(mi("S"), mn("0")),
     "n": mi("n"),
 }
 

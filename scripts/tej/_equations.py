@@ -32,8 +32,7 @@ _EQUATION_MATHML = {
       <mfrac><mn>1</mn><mrow><mi>ln</mi><mo>(</mo><mi>m</mi><mo>)</mo></mrow></mfrac><mo>&#x22c5;</mo>
       <munder><mo largeop="true">&#x2211;</mo><mi>i</mi></munder>
       <mrow><mo>(</mo><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>&#x22c5;</mo><mi>ln</mi><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>)</mo></mrow>
-      <mo>,</mo><mspace width="0.5em"/><mtext>with </mtext><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi>ln</mi><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext> when </mtext><msub><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>0</mn>
-    </mrow></math>""",
+    </mrow></math>""",   # zero convention stated in the text after the equation (review 2026-10-24)
     4: """<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>d</mi><mi>j</mi></msub><mo>=</mo><mn>1</mn><mo>-</mo><msub><mi>e</mi><mi>j</mi></msub></mrow></math>""",
     5: """<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
       <msub><mi>w</mi><mi>j</mi></msub><mo>=</mo><mfrac><msub><mi>d</mi><mi>j</mi></msub><mrow><munder><mo largeop="true">&#x2211;</mo><mi>j</mi></munder><msub><mi>d</mi><mi>j</mi></msub></mrow></mfrac>
@@ -58,6 +57,10 @@ _EQUATION_MATHML = {
       <mi>I</mi><mo>=</mo><mfrac><mi>n</mi><msub><mi>S</mi><mn>0</mn></msub></mfrac><mo>&#x22c5;</mo>
       <mfrac><mrow><munder><mo largeop="true">&#x2211;</mo><mi>i</mi></munder><munder><mo largeop="true">&#x2211;</mo><mi>j</mi></munder><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>z</mi><mi>i</mi></msub><msub><mi>z</mi><mi>j</mi></msub></mrow>
       <mrow><munder><mo largeop="true">&#x2211;</mo><mi>i</mi></munder><msup><msub><mi>z</mi><mi>i</mi></msub><mn>2</mn></msup></mrow></mfrac>
+    </mrow></math>""",
+    # S0 as a display equation (review 2026-10-24: inline it broke the line spacing)
+    12: """<math xmlns="http://www.w3.org/1998/Math/MathML"><mrow>
+      <msub><mi>S</mi><mn>0</mn></msub><mo>=</mo><munder><mo largeop="true">&#x2211;</mo><mi>i</mi></munder><munder><mo largeop="true">&#x2211;</mo><mi>j</mi></munder><msub><mi>w</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub>
     </mrow></math>""",
 }
 

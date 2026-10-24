@@ -203,11 +203,14 @@ FIGS = {
 }
 
 FIG_CAPTIONS = {
-    "framework": ("Fig. {F:framework}.", "Generalised EWM-TOPSIS framework: seven phases from data acquisition "
-         "to the counterfactual allocation rules and the zone-to-policy screen. "
-         "The architecture is criterion-flexible and adaptable across administrative scales. In the Thai "
-         "demonstration, a sixth candidate criterion, Emission Reduction Potential (ERP), "
-         f"a night-time-light proxy, was excluded at Phase 1 because it overlapped with C3 demand density "
+    # review 2026-10-24: poverty is a province statistic, not a 90 m raster criterion
+    "framework": ("Fig. {F:framework}.", "Workflow for constructing and evaluating the Priority Area Index. "
+         "Raster criteria were harmonised on a common 90 m grid and summarised by province, while official "
+         "poverty incidence was assigned at province level. The five provincial criteria were weighted by "
+         "the entropy weight method and ranked using bounded-ideal TOPSIS. The resulting index was "
+         "evaluated for spatial structure and robustness, compared with recorded deployment, and applied "
+         "to the counterfactual allocation rules and the policy screen. A candidate emission-reduction "
+         "proxy (ERP) was removed before weighting because it overlapped with demand density C3 "
          f"(Spearman ρ = {ERPD['rho_erp_c3']:.3f})."),
     "study-region": ("Fig. {F:study-region}.", "Demonstration study region: Thailand's 77 provinces with six "
          "administrative regions. Map lines delineate study areas and do not necessarily depict accepted national boundaries. Geographic coordinates, WGS 84 (EPSG:4326)."),
@@ -632,14 +635,14 @@ h1("2. Equity-Aware Priority Index")
 
 h2("2.1 Index Architecture")
 para(
-    "The index moves from spatial data to a ranked set of provinces in seven phases (Fig. {F:framework}). "
+    "The index moves from spatial data to a ranked set of provinces in five steps (Fig. {F:framework}). "
     "Candidate criteria are screened for multicollinearity, normalised to a common scale "
     "and weighted by the entropy weight method (EWM). A bounded-ideal TOPSIS ranking then "
     "gives each unit a Priority Area Index (PAI). The units are grouped into priority zones "
     "and tested for spatial clustering. The allocation scenarios and the network-distance "
     "screen of Section 3.5 are applied to this output."
 )
-insert_fig("framework", width_cm=11.0)
+insert_fig("framework", width_cm=15.9)
 
 h2("2.2 Criterion Slots and Multicollinearity Screening")
 para(
@@ -726,6 +729,9 @@ para(
     "provinces [54,61]. Household electrification is effectively universal [37], so the "
     "relevant spatial disparity is network geography rather than connection."
 )
+# Fig. 2 directly after Section 3.1 (layout 2026-10-24, after the Fig. 1 redesign moved the page breaks:
+# placed after the Section 3.2 paragraph it left page 6 at 16%)
+insert_fig("study-region", width_cm=14.0)
 h2("3.2 Data and Preprocessing")
 para(
     "The five criteria were populated with the datasets in Table {T:data}. Raster layers were "
@@ -749,9 +755,6 @@ para(
     "provinces and double-count demand (Supplementary Section S13.11). The retained criteria "
     f"have VIF ≤ {MR['vif_max']:.2f}."
 )
-# Fig. 2 follows the first paragraph of Section 3.2 (it is about 85% of a page high): placed directly after
-# Section 3.1 it was pushed to the next page and left page 6 half empty (layout check 2026-10-23)
-insert_fig("study-region", width_cm=14.0)
 tbl_caption(
     "Table {T:data}. Data sources for the five criteria, the network-distance screen and the "
     "deployment comparison."
@@ -926,8 +929,6 @@ make_table(rename_crit(t8_sel),
            # 11 columns: total kept under the 15.92 cm usable text width
            col_widths=[0.9, 1.7, 1.2, 1.2, 1.1, 1.0, 1.45, 1.45, 1.45, 1.45, 1.45],
            font_size=7.5)
-# Fig. 4 directly after Table 4 (layout check 2026-10-24: placed after Table 5 it left page 11 half empty)
-insert_fig("pai-map")
 
 para(
     f"Distances to the two networks behave differently (Table {{T:grid}}). Zone means span "
@@ -972,6 +973,9 @@ t9_screen = pd.DataFrame({
     "Grid-access index (C4)": [f"{_zc[str(z)]['C4_Infra']:.3f}" for z in range(1, 6)],
 })
 make_table(t9_screen, col_widths=[1.0, 1.6, 4.2, 4.2, 2.6], font_size=8.5)
+# layout 2026-10-24 (after the Fig. 1 redesign): Fig. 2 after Section 3.1 and Figs. 4 and 5 after
+# Table 5 leave no half-empty page apart from the title page
+insert_fig("pai-map")
 insert_fig("zones")
 
 h2("4.5 Spatial Structure")
