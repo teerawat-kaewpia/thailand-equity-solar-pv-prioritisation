@@ -7,7 +7,7 @@ Zenodo release exists; the statement then says the DOI-versioned archive will be
 TITLE = ("Equity-aware spatial prioritisation of distributed solar PV in Thailand: "
          "Policy scenarios for electricity distribution planning")
 REPO_URL = "https://github.com/teerawat-kaewpia/thailand-equity-solar-pv-prioritisation"
-RELEASE = "v1.0.0"
+RELEASE = "v1.0.1"   # v1.0.1 (2026-10-24): code that builds the submitted text, v1.0.0 kept as tagged
 DOI = None   # e.g. "10.5281/zenodo.1234567" once the Zenodo release is minted
 
 # Authors in title-page order, and their CRediT roles (CRediT draft approved by the corresponding author,

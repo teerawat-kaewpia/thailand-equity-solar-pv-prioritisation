@@ -581,49 +581,37 @@ spacer()
 # 1. INTRODUCTION
 # ══════════════════════════════════════════════════════════════════════════════
 h1("1. Introduction")
+# concise pass 2026-10-24: policy terms are given once, in Section 5.4
 para(
-    "Distributed solar photovoltaics (PV) are now a routine part of distribution planning: "
+    "Distributed solar photovoltaics (PV), here rooftop and small ground-mounted systems "
+    "connected to the distribution network, are now part of routine distribution planning: "
     "households and communities generate on the low- and medium-voltage network, and "
-    "utilities decide whether each connection can be absorbed [1]. In this study "
-    "distributed solar means rooftop and small ground-mounted PV connected to the "
-    "distribution network. Storage, wind, demand response and dispatch are outside the "
-    "scope. Where support for such systems goes, and who receives it, is a design choice "
-    "with distributional consequences. In the United States, Black- and Hispanic-majority "
-    "census tracts installed less rooftop PV even after accounting for household income and "
-    "home ownership [7], adoption inequity observed nationally also appears at the census-tract "
-    "level [9], income disparities in adoption persist across policy regimes and business "
-    "models [8], and a systematic review finds such disparities to be a general feature of "
-    "household solar [10]. Energy-justice scholarship "
-    "frames these outcomes as distributional questions [3,4], and energy poverty is itself "
-    "spatially clustered [5,6]."
+    "utilities decide whether each connection can be absorbed [1]. Storage, wind and demand "
+    "response are outside the scope. Where support goes, and who receives it, has "
+    "distributional consequences. In the United States, Black- and Hispanic-majority census "
+    "tracts installed less rooftop PV after accounting for income and home ownership [7], "
+    "adoption inequity also appears at the census-tract level [9] and persists across policy "
+    "regimes and business models [8], and a systematic review finds such disparities to be a "
+    "general feature of household solar [10]. Energy-justice scholarship frames these outcomes "
+    "as distributional questions [3,4], and energy poverty is itself spatially clustered [5,6]."
 )
 para(
-    "Thailand offers a concrete policy setting. In 2026 the Energy Regulatory Commission "
-    "invited residential rooftop systems of up to 5 kW per meter to sell surplus electricity "
-    "under net billing at 2.20 THB/kWh, within a combined target of 500 MW shared by the "
-    "Metropolitan and Provincial Electricity Authorities (MEA and PEA), with applications "
-    "accepted first come first served [49,51]. A separate ERC regulation, effective 23 September "
-    "2026, procures up to 1,500 MW "
-    "from community solar farms and asks the distribution utility to size each project to "
-    "the grid capacity at its feeder connection point [50]. For connections under the "
-    "residential programme in the PEA service area, the combined contracted sale capacity (kW) on "
-    "one distribution transformer is capped at 25% of the transformer's kVA rating [51]. The national Power Development "
-    "Plan 2018 Revision 1 (PDP2018 Rev.1) was issued in 2020 [39]. On 8 September 2026, "
-    "the Energy Policy and Planning Office opened consultation on draft PDP2026 for 2026 to "
-    "2050, which includes an indicative target of more than 9,100 MW of distributed energy "
-    "resources by 2050 [40]. The draft is treated here as planning context, not as an "
-    "instrument in force. The instruments examined define how much "
-    "distributed solar can be bought and under which network conditions, but not where "
-    "support should go."
+    "Thailand offers a concrete setting. Its 2026 instruments, a residential net-billing round "
+    "of the Energy Regulatory Commission (ERC) [49,51], a community solar regulation [50] and transformer-level connection limits of the "
+    "Provincial Electricity Authority (PEA) [51], define how much distributed solar can be bought and under which "
+    "network conditions, but not where support should go (Section 5.4). The Power Development "
+    "Plan 2018 Revision 1 (PDP2018 Rev.1) remains the adopted plan [39], and the draft Power "
+    "Development Plan 2026 (PDP2026), under consultation since 8 September 2026, is "
+    "treated as planning context, not as an instrument in force [40]."
 )
 para(
     "Spatial multi-criteria studies of solar siting typically rank places by resource, land "
-    "and infrastructure criteria [20,24] and stop at the ranking. A ranking alone does not "
-    "show what a programme would gain or give up by allocating support one way rather than "
-    "another, nor how the result relates to the instruments in force and the network checks "
-    "that gate every connection. This paper addresses that gap by pairing an equity-aware "
-    "provincial index with counterfactual allocation rules evaluated under one hypothetical "
-    "budget, and by relating both to the instruments examined."
+    "and infrastructure criteria [20,24] and stop at the ranking. A ranking does not show what "
+    "a programme would gain or give up by allocating support one way rather than another, nor "
+    "how the result relates to the instruments in force and the network checks that gate "
+    "every connection. This paper pairs an equity-aware provincial index with counterfactual "
+    "allocation rules evaluated under one hypothetical budget and relates both to the "
+    "instruments examined."
 )
 para(
     "Three research questions guide the analysis. (RQ1) Where does an equity-aware index "
@@ -632,12 +620,8 @@ para(
     "allocation rules differ in poverty exposure, solar resource, and distance to mapped "
     "power lines and to the modelled medium-voltage (MV) network? (RQ3) How do the "
     "instruments currently in force compare with these rules, and which utility checks gate "
-    "implementation? The allocation rules are counterfactuals: they are not evaluations of "
-    "implemented policy, and no rule is ranked as best. Section 2 sets out the index, Section "
-    "3 the data and the scenario design, Section 4 the results and Section 5 the policy "
-    "screen. An urban application under the MEA context, which requires feeder-level "
-    "evidence that the provincial screen cannot provide, is reported in Supplementary "
-    "Section S12."
+    "implementation? An urban application in the service area of the Metropolitan Electricity "
+    "Authority (MEA) is reported in Supplementary Section S12."
 )
 spacer()
 
@@ -721,8 +705,8 @@ para(
 
 h2("2.5 Network-Distance Screen")
 para(
-    "Zones are screened by the mean distance of their provinces to the OSM-mapped power-line "
-    "network and to a modelled medium-voltage network (Section 3.5). Distance indicates "
+    "Zones are screened by the mean distance of their provinces to the power-line network "
+    "mapped in OpenStreetMap (OSM) and to a modelled medium-voltage network (Section 3.5). Distance indicates "
     "connection convenience. It is not hosting capacity."
 )
 
@@ -737,44 +721,33 @@ h2("3.1 Study Region")
 para(
     "Thailand has 77 provinces in six regions (Fig. {F:study-region}). Poverty is highest in the "
     "western border provinces of Mae Hong Son and Tak, the deep south and parts of the "
-    "north-eastern plateau, while population and the "
-    "transmission backbone are densest in the Central region. The Metropolitan Electricity "
-    "Authority (MEA) serves Bangkok, Nonthaburi and Samut Prakan, and the Provincial "
-    f"Electricity Authority (PEA) supplies the remaining 74 provinces [54,61]. Household "
-    "electrification is effectively universal [37], so the relevant spatial disparity is "
-    "network geography rather than connection. PDP2018 Rev.1 [39] remained the adopted plan "
-    "used as the baseline in this study. EPPO opened public consultation on draft PDP2026 on "
-    "8 September 2026 [40]. The draft is treated as planning context rather than an implemented "
-    "instrument."
+    "north-eastern plateau, while population and the transmission backbone are densest in the "
+    "Central region. MEA serves Bangkok, Nonthaburi and Samut Prakan, and PEA the remaining 74 "
+    "provinces [54,61]. Household electrification is effectively universal [37], so the "
+    "relevant spatial disparity is network geography rather than connection."
 )
 h2("3.2 Data and Preprocessing")
 para(
     "The five criteria were populated with the datasets in Table {T:data}. Raster layers were "
-    f"resampled to a common grid of 0.000833° in geographic coordinates (WGS 84, EPSG:4326), "
-    f"approximately 90 m ({AWC['grid']['ns_m']:.0f} m north–south and {AWC['grid']['ew_m_at_20N']:.0f}–"
-    f"{AWC['grid']['ew_m_at_6N']:.0f} m east–west across Thailand). The PAI is defined on "
-    f"{PAIQA['pai_grid_valid_cells']:,} cells of this grid, "
-    "those valid in every criterion layer. The grid serves harmonisation and aggregation "
-    "only. Province values are the unweighted mean of the cells within each province, and every "
-    "statistic is computed on the 77 provinces. Cell area on this grid varies with latitude by "
-    f"at most {AWC['within_province_area_weight_spread_max_pct']:.1f}% within a province. "
-    "Weighting cells by area changed no province mean by more than "
+    f"resampled to a common grid of 0.000833° (WGS 84, EPSG:4326), approximately 90 m "
+    f"({AWC['grid']['ns_m']:.0f} m north–south and {AWC['grid']['ew_m_at_20N']:.0f}–"
+    f"{AWC['grid']['ew_m_at_6N']:.0f} m east–west across Thailand), and the PAI is defined on the "
+    f"{PAIQA['pai_grid_valid_cells']:,} cells valid in every criterion layer. The grid serves "
+    "harmonisation only: province values are unweighted means of their cells, and every "
+    "statistic is computed on the 77 provinces. Weighting cells by their latitude-dependent area "
+    f"(at most {AWC['within_province_area_weight_spread_max_pct']:.1f}% spread within a province) "
+    "changed no province mean by more than "
     f"{100 * max(AWC['max_relative_change_of_province_means'].values()):.1f}% and no PAI by more "
     f"than {AWC['max_abs_PAI_change']:.4f}, and left the zones and scenario memberships unchanged "
-    "(Supplementary Section S6). Poverty incidence is one official value per province, "
-    "replicated across the province's cells, so no poverty information is implied below "
-    "province resolution. A sixth candidate criterion, an emission-reduction proxy (ERP) built "
-    "from night-time light and a national emission factor, was excluded from the final "
-    "criterion set because it substantially overlapped with the demand-density criterion C3 "
+    "(Supplementary Section S6). Poverty incidence is one official value per province, so no "
+    "poverty information is implied below province resolution. A sixth candidate criterion, an "
+    "emission-reduction proxy (ERP) from night-time light and a national emission factor, was "
+    "excluded because it overlapped with the demand-density criterion C3 "
     f"(Spearman ρ = {ERPD['rho_erp_c3']:.3f}). A VIF of 24.98 reported for ERP in an earlier "
     "version of this analysis could not be reproduced after the correction of C2 and is not "
-    "used as a basis for exclusion. A post hoc diagnostic that adds ERP back is reported in "
-    "Supplementary Section S13.11. It shows that entropy weighting is highly sensitive to the "
-    "skewed ERP distribution, which would shift the index toward urban provinces and "
-    f"double-count the demand-related dimension. The retained criteria have VIF ≤ {MR['vif_max']:.2f}. The analysis does "
-    "not include feeder-level hosting capacity, time-resolved load or the location of "
-    "existing distributed generation, so it screens priorities and does not replace "
-    "network or dispatch modelling."
+    "used as a basis for exclusion. Adding ERP back would shift the index toward urban "
+    "provinces and double-count demand (Supplementary Section S13.11). The retained criteria "
+    f"have VIF ≤ {MR['vif_max']:.2f}."
 )
 # Fig. 2 follows the first paragraph of Section 3.2 (it is about 85% of a page high): placed directly after
 # Section 3.1 it was pushed to the next page and left page 6 half empty (layout check 2026-10-23)
@@ -913,10 +886,8 @@ para(
     f"Equity received the largest weight (w = {wt('C2_Equity')}), about twice that of any other "
     f"criterion. Infrastructure access (w = {wt('C4_Infra')}), physical suitability "
     f"(w = {wt('C5_Physical')}) and demand density (w = {wt('C3_Demand')}) were close, and "
-    f"solar resource was lowest (w = {wt('C1_Resource')}) (Table {{T:weights}}). Entropy "
-    "weights measure how sharply a criterion separates provinces. They do not express "
-    "societal preference or causal importance. Poverty varies far more between Thai "
-    "provinces than solar resource does, which is why it dominates."
+    f"solar resource was lowest (w = {wt('C1_Resource')}) (Table {{T:weights}}), because poverty "
+    "varies far more between Thai provinces than solar resource does (Section 2.3)."
 )
 tbl_caption("Table {T:weights}. EWM criterion weights and Shannon entropy (n = 77 provinces).")
 t6w = T["T2_Criterion_Def"][["Criterion", "Full Name", "Shannon Entropy (e)", "EWM Weight"]].copy()
@@ -929,15 +900,14 @@ make_table(rename_crit(t6w), col_widths=[1.8, 4.5, 3.0, 3.0], font_size=8.5)
 
 h2("4.4 Priority Zones and Network Distances")
 para(
-    f"PAI ranged from {MR['pai']['min']:.3f} to {MR['pai']['max']:.3f} (Fig. {{F:pai-map}}). K-means "
-    f"clustering gave five zones (Table {{T:zones}}, Fig. {{F:zones}}). Zone 1 holds "
+    f"K-means clustering of the PAI (Fig. {{F:pai-map}}) gave five zones (Table {{T:zones}}, Fig. {{F:zones}}). Zone 1 holds "
     f"{MR['zones']['1']['n']} provinces (PAI {MR['zones']['1']['pai_min']:.3f}–"
     f"{MR['zones']['1']['pai_max']:.3f}): {names(_Z1)}. They reach the top tier through high poverty, high irradiance with flat land, "
-    "or both (Section 4.6). Zone 5 "
+    "or both (Section 4.6), and Zone 5 "
     "combines low poverty with forested or mountainous terrain. The silhouette coefficient "
     f"is nearly flat across k = 2–6, and k = 5 is within "
     f"{MR['cluster_stability']['silhouette_max'] - MR['cluster_stability']['silhouette_k5']:.3f} of "
-    "the best value, so the zones are a planning typology, tiers on a gradient, and the province ordering "
+    "the best value, so the zones are a planning typology on a gradient, and the province ordering "
     "carries the information."
 )
 tbl_caption(
@@ -956,24 +926,25 @@ make_table(rename_crit(t8_sel),
            # 11 columns: total kept under the 15.92 cm usable text width
            col_widths=[0.9, 1.7, 1.2, 1.2, 1.1, 1.0, 1.45, 1.45, 1.45, 1.45, 1.45],
            font_size=7.5)
+# Fig. 4 directly after Table 4 (layout check 2026-10-24: placed after Table 5 it left page 11 half empty)
+insert_fig("pai-map")
 
 para(
     f"Distances to the two networks behave differently (Table {{T:grid}}). Zone means span "
     f"{ZK['3']['line_km_mean']:.1f}–{ZK['5']['line_km_mean']:.1f} km to the OSM-mapped power lines, "
     f"with Zone 3 nearest and Zones 4 and 5 farthest. Within Zone 1 the province means range "
     f"from {ZK['1']['line_km_min']:.1f} to {ZK['1']['line_km_max']:.1f} km. Distances to the "
-    "GridFinder modelled MV network [29], computed on a 90 m grid in UTM zone 47N, are "
+    "GridFinder modelled MV network [29] are "
     f"shorter ({ZK['1']['mv_km_mean']:.2f}–{ZK['5']['mv_km_mean']:.2f} km), and Zone 1 has the "
     "lowest zone mean. Across the 77 provinces PAI is negatively associated with distance to "
     f"the modelled MV lines (Spearman ρ = {ZD['spearman_PAI_vs_mv_mean_77']['rho']:.3f}, "
     f"p {'< 0.001' if ZD['spearman_PAI_vs_mv_mean_77']['p'] < 0.001 else '= ' + format(ZD['spearman_PAI_vs_mv_mean_77']['p'], '.3f')}) "
     "but not significantly associated with distance to the power lines "
     f"(ρ = {ZD['spearman_PAI_vs_line_mean_77']['rho']:.3f}, p = {ZD['spearman_PAI_vs_line_mean_77']['p']:.2f}). "
-    "The power-line distances are approximate to within a few percent, and the MV network is "
-    "modelled rather than surveyed. Neither measures hosting capacity, which depends on "
-    "impedance, voltage regulation and protection settings [27,28]. Replacing the power-line "
-    "criterion with a GridFinder low-voltage density surface kept the provincial ranking "
-    f"close to the published one (ρ = {MR['pai_mv']['spearman_paiMV_vs_published']:.3f}) and the "
+    "Neither distance measures hosting capacity, which depends on impedance, voltage regulation "
+    "and protection settings [27,28]. Replacing the power-line criterion with a GridFinder "
+    "low-voltage density surface kept the provincial ranking close to the published one "
+    f"(ρ = {MR['pai_mv']['spearman_paiMV_vs_published']:.3f}) and the "
     f"equity association negative (ρ = {MR['pai_mv']['efficiency_equity_mv']:.3f}), although it "
     "changed the zone boundaries (Supplementary Table {T:S-lv})."
 )
@@ -1001,7 +972,6 @@ t9_screen = pd.DataFrame({
     "Grid-access index (C4)": [f"{_zc[str(z)]['C4_Infra']:.3f}" for z in range(1, 6)],
 })
 make_table(t9_screen, col_widths=[1.0, 1.6, 4.2, 4.2, 2.6], font_size=8.5)
-insert_fig("pai-map")
 insert_fig("zones")
 
 h2("4.5 Spatial Structure")
@@ -1038,8 +1008,7 @@ para(
     "record where deployment has been profitable, not where it ought to occur. OpenStreetMap "
     "coverage is not universal and its quality is not systematically measured [31]. The comparison is therefore "
     "descriptive, not a validation of the index: the land-area null model does not control for "
-    "developable land or grid access. It shows that efficiency-oriented siting and the equity "
-    "criterion diverge, not that a deployment deficit has been measured."
+    "developable land or grid access, so it shows divergence, not a measured deployment deficit."
 )
 insert_fig("deployment")
 
@@ -1059,8 +1028,8 @@ para(
     f"raised the allocation-weighted mean poverty incidence to {sc('S2','mean_poverty_pct')}%, "
     f"against {sc('S1','mean_poverty_pct')}% under the baseline and "
     f"{sc('S3','mean_poverty_pct')}% under the comparator S3. This difference arises partly by "
-    "construction, because poverty enters the PAI that selects the S2 provinces. The "
-    f"informative quantities are what accompanies it. S2 reached {int(SC.loc['S2','regions'])} "
+    "construction, because poverty enters the PAI that selects the S2 provinces. "
+    f"S2 reached {int(SC.loc['S2','regions'])} "
     f"regions and the baseline {int(SC.loc['S1','regions'])}, while S3 reached "
     f"{int(SC.loc['S3','regions'])}. Mean PVOUT differed little "
     f"({sc('S2','mean_pvout_kwh_kwp','{:,.0f}')} against {sc('S3','mean_pvout_kwh_kwp','{:,.0f}')} "
@@ -1076,19 +1045,12 @@ para(
     f"targeting changed MV access far less than line access. S2 placed "
     f"{sc('S2','share_B_farther_pct','{:.1f}')}% of the budget in the farther MV class, "
     f"against {sc('S3','share_B_farther_pct','{:.1f}')}% under S3. No province received more "
-    f"than {SC['max_province_share_pct'].max():.1f}% of the budget under any rule. These "
-    "are distances to modelled and mapped networks, not measures of hosting capacity."
+    f"than {SC['max_province_share_pct'].max():.1f}% of the budget under any rule."
 )
 para(
-    "Three cautions govern how Table {T:allocation} is read. First, the rules are "
-    "counterfactual. They ask how a fixed budget would be distributed under a stated "
-    "allocation principle, not how any programme has performed or would perform once "
-    "households and developers respond. Second, no rule is ranked as best. Each serves a "
-    "different objective, and preferring one requires a normative weighting of poverty "
-    "exposure against network access that the analysis does not supply. Third, the "
-    "allocation-weighted metrics describe where support would go, not how much capacity "
-    "would be installed or connected, which depends on uptake and on the utility's "
-    "connection checks."
+    "No rule is ranked as best: preferring one requires a normative weighting of poverty "
+    "exposure against network access that the analysis does not supply, and the metrics "
+    "describe where support would go, not how much capacity would be installed or connected."
 )
 tbl_caption(
     "Table {T:allocation}. Counterfactual allocation rules under one hypothetical budget (74 PEA-served "
@@ -1120,92 +1082,75 @@ h1("5. Discussion")
 h2("5.1 Why Equity Dominates the Weights")
 para(
     "Entropy weighting, applied without normative input, made equity the dominant criterion "
-    "and solar resource the weakest (Section 4.3). Regional solar siting studies usually "
+    "and solar resource the weakest (Section 4.3), whereas regional siting studies usually "
     "treat irradiance and land as the primary determinants [20,23,24]. The difference is "
-    "methodological. Entropy weight measures how sharply a criterion separates units, and "
-    "irradiance varies modestly across Thailand while poverty varies a great deal. Where "
-    "insolation varies more, the ordering would likely reverse, so the weights should be "
-    "re-derived in each context rather than transported. Compared with expert elicitation "
-    "such as the analytic hierarchy process [44], the procedure avoids direct elicitation "
-    "while keeping the dependence on weights visible (Section 4.8). Within Thailand the "
-    f"consequence is real. Including equity moves {MR['equity_removal']['n_shift_gt10']} of 77 "
-    "provinces by more than ten ranks and shifts priority toward north-eastern and "
-    "deep-south provinces rather than the most bankable locations, which treats siting as "
-    "a question of who benefits as well as where generation is cheapest [2]."
+    "methodological: irradiance varies modestly across Thailand while poverty varies a great "
+    "deal. Where insolation varies more, the ordering would likely reverse, so the weights "
+    "should be re-derived in each context rather than transported. Unlike expert elicitation "
+    "such as the analytic hierarchy process [44], the procedure needs no elicitation while "
+    "keeping the dependence on weights visible (Section 4.8). Within Thailand the consequence "
+    "is substantive: priority shifts toward north-eastern and deep-south provinces rather than "
+    "the most bankable locations, which treats siting as a question of who benefits as well as "
+    "where generation is cheapest [2]."
 )
-
 h2("5.2 Need-Based Priority and Recorded Deployment")
 para(
-    "Recorded deployment is consistent with efficiency-oriented siting, as captured by the "
-    "efficiency-only composite, and the provinces that equity-aware assessment identifies are "
-    "largely those with the least recorded deployment (Section 4.7). The two orderings therefore disagree "
-    "about much of the country, which answers the objection that an equity-weighted index "
-    "merely relabels what technical assessment already finds. Because priority forms "
-    "several separated pockets (Section 4.5) and Zone 1 is reached by different routes "
+    "Recorded deployment is consistent with efficiency-oriented siting, and the provinces that "
+    "equity-aware assessment identifies are largely those with the least recorded deployment "
+    "(Section 4.7). The two orderings disagree about much of the country, so an "
+    "equity-weighted index does not merely relabel what technical assessment already finds. "
+    "Because priority forms separated pockets (Section 4.5) reached by different routes "
     "(Section 4.6), a single target region would misdirect effort."
 )
-
 h2("5.3 Network Screen and Robustness")
 para(
     "The network screen tempers the ranking rather than displacing it. Several high-priority "
-    "provinces combine acute need with long distances to the mapped power lines, yet lie "
-    "close to the modelled MV network (Section 4.4). That is an argument for sizing "
-    "deployment to the distribution network rather than for demoting those provinces. "
-    "Because the screen reports distance and not hosting capacity, they are best read as "
-    "priorities for a utility hosting-capacity study before a programme is scaled up. The "
-    "ranking is robust to the equity weight but sensitive to equal weighting, which "
-    "discards the dispersion information that entropy weighting uses (Section 4.8). Equal "
-    "weighting is therefore not a neutral default. A planner who prefers an "
-    "investment-return view should use the efficiency-only composite explicitly."
+    "provinces combine acute need with long distances to the mapped power lines yet lie close "
+    "to the modelled MV network (Section 4.4). That argues for sizing deployment to the "
+    "distribution network, not for demoting those provinces, and for a utility "
+    "hosting-capacity study before a programme is scaled up. The ranking is robust to the "
+    "equity weight but sensitive to equal weighting, which discards the dispersion information "
+    "that entropy weighting uses (Section 4.8). Equal weighting is therefore not a neutral "
+    "default, and a planner who prefers an investment-return view should use the "
+    "efficiency-only composite explicitly."
 )
-
 h2("5.4 Policy Implications")
 para(
-    "The policy question the scenarios answer is not which provinces rank highest but what "
-    "a programme gains and gives up under different allocation rules. Directing support by "
-    "the equity-aware index raises poverty exposure by construction, because poverty enters "
-    "the index. The informative result is what accompanies it: longer distances to mapped "
-    "power lines, with distances to the modelled MV network changing much less (Section 4.9). A programme that allocated support by need would therefore "
-    "lean on distribution-connected rooftop and community systems rather than on capacity "
-    "that requires new high-voltage connection. Whether a given feeder or transformer can "
-    "absorb that capacity is decided by the utility, not by any province-level screen. Table "
-    "{T:policy} sets the zones against the instruments in force, the gaps observed among them, and "
-    "the gates that apply."
+    "The scenarios answer what a programme gains and gives up under different allocation "
+    "rules, not which provinces rank highest. Directing support by the equity-aware index "
+    "raises poverty exposure by construction, and the informative result is what accompanies "
+    "it: longer distances to mapped power lines, with distances to the modelled MV network "
+    "changing much less (Section 4.9). Implementing a need-based allocation rule through "
+    "rooftop or community projects would still require feeder- and transformer-level "
+    "verification by the utility, which a province-level screen cannot provide."
 )
 para(
-    "The instruments in force at the policy cutoff of 16 October 2026 were examined against "
-    "this zoning (Table {T:policy}, with the "
-    "full legal basis in Supplementary Table {T:S-policy-full}). Under the ERC invitation of June 2026, "
-    "household rooftop solar is purchased under "
-    "net billing at 2.20 THB/kWh for up to 5 kW per meter over ten years, within a combined "
-    "MEA and PEA target of 500 MW, and applications are accepted first come first served [49,51]. "
-    "The community solar regulation, effective 23 September 2026, buys up to 1,500 MW from "
-    "ground-mounted projects of at most "
-    "10 MW at a feed-in tariff of 2.1679 THB/kWh, and the distribution utility sets each "
-    "project's capacity from the grid capacity at its feeder connection point and the local "
-    "load profile, with no reverse flow to the transmission system [50]. For connections "
-    "under the residential programme in the PEA service area, the combined contracted sale "
-    "capacity on one distribution transformer may not exceed 25% of the transformer's kVA rating, and PEA may "
-    "limit inverter size where its network could be affected [51]. Among the instruments examined, no spatial or poverty-targeting allocation "
-    "rule was identified. The Energy Conservation Promotion Fund, established in the Ministry of "
-    "Energy, supports energy conservation by government agencies, state enterprises and private "
-    "parties [52]. Whether its criteria cover distributed solar investment was not established "
-    "from the Act, so it appears in Table {T:policy} only as a conditional candidate. A progressive "
-    "residential tariff applied from the September 2026 bill [53] is a consumer-protection "
-    "measure that bears on affordability but does not deploy solar capacity. Each candidate "
-    "response in Table {T:policy} remains subject to the utility's connection verification, which a "
-    "province-level screen cannot replace (Section 5.3). A rule that reserved part of an "
-    "instrument for high-priority provinces would be a new design. It is not evaluated "
-    "here."
+    "Table {T:policy} sets the zones against the instruments in force at the policy cutoff of "
+    "16 October 2026 (full legal basis in Supplementary Table {T:S-policy-full}). Under the ERC "
+    "invitation of June 2026, household rooftop solar is purchased under net billing at "
+    "2.20 THB/kWh for up to 5 kW per meter over ten years, within a combined MEA and PEA target "
+    "of 500 MW, and applications are accepted first come first served [49,51]. The community "
+    "solar regulation, effective 23 September 2026, buys up to 1,500 MW from projects of at "
+    "most 10 MW at a feed-in tariff of 2.1679 THB/kWh, and the distribution utility sizes each "
+    "project to the grid capacity at its feeder connection point and the local load, with no "
+    "reverse flow to the transmission system [50]. In the PEA service area, the combined "
+    "contracted sale capacity of programme connections on one distribution transformer may not "
+    "exceed 25% of its kVA rating, and PEA may limit inverter size [51]. Among the instruments "
+    "examined, no spatial or poverty-targeting allocation rule was identified. The Energy "
+    "Conservation Promotion Fund [52] appears in Table {T:policy} only as a conditional "
+    "candidate, because the Act does not establish whether its criteria cover distributed "
+    "solar, and the progressive residential tariff applied from the September 2026 bill [53] "
+    "bears on affordability but deploys no capacity. Every candidate response remains subject "
+    "to the utility's connection verification (Section 5.3). A rule that reserved part of an "
+    "instrument for high-priority provinces would be a new design and is not evaluated here."
 )
 para(
-    "The observed gap should be read narrowly. It refers to the allocation rules of the "
-    "instruments examined (Supplementary Table {T:S-policy-docs}), not to Thai energy policy as "
-    "a whole, and other measures outside that set may reach low-income households in ways "
-    "this screen does not capture. It also concerns allocation only. It does not imply that "
-    "the instruments are poorly designed for their own objectives, which include buying "
-    "capacity within network limits. What the scenarios add is a way to see what a "
-    "targeting rule would change if policymakers chose to introduce one."
+    "The observed gap should be read narrowly. It concerns the allocation rules of the "
+    "instruments examined (Supplementary Table {T:S-policy-docs}), not Thai energy policy as a "
+    "whole, and other measures may reach low-income households in ways this screen does not "
+    "capture. Nor does it imply that the instruments are poorly designed for their own "
+    "objectives, which include buying capacity within network limits. The scenarios show what "
+    "a targeting rule would change if policymakers chose to introduce one."
 )
 tbl_caption(
     "Table {T:policy}. Zone-to-policy screen. Spatial conditions summarise Tables {T:zones} and {T:grid}. MV classes "
@@ -1232,24 +1177,24 @@ para(
     "negative (Supplementary Table {T:S-maup}). The raster inputs have native resolutions "
     "from 30 m to 1 km and poverty is one value per province, so resampling to the 90 m working "
     "grid adds no detail to the coarser layers and province means hide intra-provincial "
-    "variation. The gridded population input and the night-light data behind "
-    "the modelled MV network have known "
-    "accuracy limits [32,33], and the physical-suitability criterion omits statutory land-use "
-    "zoning, so its scores are an upper bound. The allocation rules distribute a "
-    "hypothetical budget by population and do not model uptake, affordability or "
-    "installation cost. The power-line distance is approximate to within a few percent, and "
-    "the MV network is modelled rather than surveyed. PEA's published remaining generation "
-    "capacity is recorded per substation, shares upstream constraints and could not be "
-    "linked reliably to provinces, so it informs the implementation gate but not the "
-    "scenarios. The policy screen covers only the instruments examined and uses a 16 October "
-    "2026 cutoff. Draft PDP2026, under consultation from 8 September 2026, and the 10,000 MW "
-    "residential rooftop target that the Minister of Energy presented for it on 9 September 2026 "
-    "were planning targets, not instruments in force: no implementing ERC or utility instrument "
-    "for that expansion was located by the cutoff [40,47]. The OSM "
-    "installation record "
-    "carries ascertainment bias. Future work should replace distances with feeder-level "
-    "hosting capacity in collaboration with the utilities, use an official installation "
-    "registry with capacities, and test targeting rules within an actual instrument design."
+    "variation. The gridded population input and the night-light data behind the modelled MV "
+    "network have known accuracy limits [32,33], the power-line distance is approximate to "
+    "within a few percent, and the physical-suitability criterion omits statutory land-use "
+    "zoning, so its scores are an upper bound. The analysis includes no feeder-level hosting "
+    "capacity, time-resolved load or existing distributed generation, and the allocation rules "
+    "do not model uptake, affordability or installation cost. PEA's published remaining "
+    "generation capacity is recorded per substation and could not be linked reliably to "
+    "provinces, so it informs the implementation gate but not the scenarios."
+)
+para(
+    "The policy screen covers only the instruments examined, with a 16 October 2026 cutoff. Draft PDP2026 and the "
+    "10,000 MW residential rooftop target that the Minister of Energy presented for it on "
+    "9 September 2026 were planning targets, not instruments in force: no implementing ERC or "
+    "utility instrument for that expansion was located by the cutoff [40,47]. The OSM "
+    "installation record carries ascertainment bias. Future work should replace distances with "
+    "feeder-level hosting capacity in collaboration with the utilities, use an official "
+    "installation registry with capacities, and test targeting rules within an actual "
+    "instrument design."
 )
 spacer()
 
@@ -1303,7 +1248,7 @@ para(
     "access to the network, and a zone-to-policy screen that relates this trade-off to the "
     "instruments in force and to the utility checks that gate them, with every "
     "institutional and regulatory statement traced to a primary document (Supplementary "
-    "Section S11). How support is allocated matters as much as how much is offered."
+    "Section S11). How support is allocated shapes which places and populations the programme reaches."
 )
 spacer()
 
@@ -1425,6 +1370,10 @@ for _node in doc.element.body.iter(qn("w:t")):
     if _node.text and "{" in _node.text:
         _node.text = resolve_text(_node.text)
 assert not any("{T:" in (q.text) or "{F:" in q.text for q in doc.paragraphs), "unresolved float token"
+# a string that lost its f prefix prints its fields literally (concise pass 2026-10-24: "{MR['pai_mv'][...]:.3f}")
+_raw = [t for t in [q.text for q in doc.paragraphs] + [c.text for _t in doc.tables for _r in _t.rows for c in _r.cells]
+        if re.search(r"\{[A-Za-z_][A-Za-z0-9_]*(?:\[|\(|:|\}|\.)|\{\{|\}\}", t)]
+assert not _raw, "unformatted f-string field in the document: " + _raw[0][:160]
 
 _citation_order = []
 for _node in _body_text_nodes():
